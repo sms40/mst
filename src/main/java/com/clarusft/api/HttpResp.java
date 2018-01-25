@@ -47,6 +47,6 @@ public class HttpResp {
 	
 	@Override
 	public String toString() {
-		return "HttpResp [responseCode=" + responseCode + ", responseBody=" + responseBody + "]";
+		return "Response [code=" + responseCode + ", text=" + responseBody + "]";
 	}
 }

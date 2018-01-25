@@ -9,5 +9,10 @@ public class DefaultCsvResponse extends ApiResponse {
 
 	public void setGrid(StringGrid grid) {
 		this.grid = grid;
-	}	
+	}
+
+	@Override
+	public String toString() {
+		return grid != null ? grid.toString() : super.toString();
+	}
 }

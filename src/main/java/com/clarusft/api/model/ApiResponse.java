@@ -24,4 +24,9 @@ public class ApiResponse {
 			this.stats.putAll(stats);
 		}
 	}
+	@Override
+	public String toString() {
+		return httpResponse != null ? httpResponse.toString() : null;
+	}
+	
 }
