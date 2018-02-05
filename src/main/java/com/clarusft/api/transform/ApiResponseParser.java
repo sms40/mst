@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
-import com.clarusft.api.HttpResp;
+import com.clarusft.api.http.HttpResp;
 import com.clarusft.api.model.ApiResponse;
 
 public abstract class ApiResponseParser<RESP extends ApiResponse> {

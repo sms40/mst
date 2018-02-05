@@ -5,7 +5,7 @@ import javax.annotation.Generated;
 @Generated("clarusft-ms-api-gen/com.clarusft.generator.Generator")
 public class TradesRequest extends com.clarusft.api.model.ApiRequest {
 	public TradesRequest() {
-		super("Portfolio", "Trades", com.clarusft.api.OutputTypes.CSV, com.clarusft.api.model.ApiRequest.HTTP_POST);
+		super("Portfolio", "Trades", com.clarusft.api.http.OutputTypes.CSV, com.clarusft.api.http.HttpMethod.POST);
 	}
 
 	public void setValueDate(java.time.LocalDate valueDate) {
@@ -37,6 +37,16 @@ public class TradesRequest extends com.clarusft.api.model.ApiRequest {
 	}
 
 
+	public void setFormat(java.lang.String format) {
+		setParameter("format", format);
+	}
+
+	public TradesRequest withFormat(java.lang.String format) {
+		setParameter("format", format);
+		return this;
+	}
+
+
 	public void setTradeAttributes(java.util.Collection<String> tradeAttributes) {
 		setParameter("tradeAttributes", tradeAttributes);
 	}
@@ -63,6 +73,10 @@ public class TradesRequest extends com.clarusft.api.model.ApiRequest {
 	@SuppressWarnings("unchecked")
 	public java.util.Collection<String> getPortfolios() {
 		return (java.util.Collection<String>)getParameter("portfolios");
+	}
+
+	public java.lang.String getFormat() {
+		return (java.lang.String)getParameter("format");
 	}
 
 	@SuppressWarnings("unchecked")

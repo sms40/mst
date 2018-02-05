@@ -5,7 +5,7 @@ import javax.annotation.Generated;
 @Generated("clarusft-ms-api-gen/com.clarusft.generator.Generator")
 public class ScenarioRequest extends com.clarusft.api.model.ApiRequest {
 	public ScenarioRequest() {
-		super("Load", "Scenario", com.clarusft.api.OutputTypes.CSV, com.clarusft.api.model.ApiRequest.HTTP_POST);
+		super("Load", "Scenario", com.clarusft.api.http.OutputTypes.CSV, com.clarusft.api.http.HttpMethod.POST);
 	}
 
 	public void setScenarioId(java.lang.String scenarioId) {
@@ -38,6 +38,16 @@ public class ScenarioRequest extends com.clarusft.api.model.ApiRequest {
 	}
 
 
+	public void setRateType(String rateType) {
+		setParameter("rateType", rateType);
+	}
+
+	public ScenarioRequest withRateType(String rateType) {
+		setParameter("rateType", rateType);
+		return this;
+	}
+
+
 	public void setShiftType(String shiftType) {
 		setParameter("shiftType", shiftType);
 	}
@@ -58,6 +68,10 @@ public class ScenarioRequest extends com.clarusft.api.model.ApiRequest {
 
 	public java.lang.String getFactorExpression() {
 		return (java.lang.String)getParameter("factorExpression");
+	}
+
+	public String getRateType() {
+		return (String)getParameter("rateType");
 	}
 
 	public String getShiftType() {

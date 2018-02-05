@@ -2,7 +2,7 @@ package com.clarusft.api.transform;
 
 import java.io.IOException;
 
-import com.clarusft.api.HttpResp;
+import com.clarusft.api.http.HttpResp;
 import com.clarusft.api.model.DefaultCsvResponse;
 import com.clarusft.api.model.StringGrid;
 

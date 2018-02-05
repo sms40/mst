@@ -2,6 +2,8 @@ package com.clarusft.api;
 
 import javax.annotation.Generated;
 
+import com.clarusft.api.exception.ApiException;
+
 @ThreadSafe
 @Generated("clarusft-ms-api-gen/com.clarusft.generator.Generator")
 public class ApiClient extends ApiClientSupport {
@@ -514,5 +516,32 @@ public class ApiClient extends ApiClientSupport {
 		return requestImpl(request, parser);
 	}
 		
+
+
+	@Override
+	protected void setDrilldownProvider(com.clarusft.api.model.SupportsDrilldown supportsDrilldown) {
+		supportsDrilldown.setDrilldownProvider(new com.clarusft.api.model.DrilldownProvider() {
+			@Override
+			public com.clarusft.api.model.DrilldownResponse drilldown(Integer gridId, String row, String col, String view) {
+				com.clarusft.api.model.util.GridRequest request = new com.clarusft.api.model.util.GridRequest();
+
+				if (gridId != null) request.setGridId(gridId);
+				if (row != null)	request.setDrilldownRow(row);
+				if (col != null)	request.setDrilldownCol(col);
+				if (view != null)	request.setDrilldownView(view);
+
+				com.clarusft.api.model.util.GridResponse response = request(request);
+
+				com.clarusft.api.model.DrilldownResponse ddResponse = new com.clarusft.api.model.DrilldownResponse();
+				ddResponse.setHttpResponse(response.getHttpResponse());
+				ddResponse.setGrid(response.getGrid());
+				ddResponse.setStats(response.getStats());
+
+				ddResponse.setDrilldownProvider(this);
+
+				return ddResponse;
+			}
+		});
+	}
 
 }

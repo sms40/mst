@@ -5,7 +5,7 @@ import javax.annotation.Generated;
 @Generated("clarusft-ms-api-gen/com.clarusft.generator.Generator")
 public class SARequest extends com.clarusft.api.model.ApiRequest {
 	public SARequest() {
-		super("FRTB", "SA", com.clarusft.api.OutputTypes.CSV, com.clarusft.api.model.ApiRequest.HTTP_POST);
+		super("FRTB", "SA", com.clarusft.api.http.OutputTypes.CSV, com.clarusft.api.http.HttpMethod.POST);
 	}
 
 	public void setPortfolios(java.util.Collection<String> portfolios) {
@@ -56,6 +56,74 @@ public class SARequest extends com.clarusft.api.model.ApiRequest {
 	}
 
 
+	public void setMarketData(java.util.Collection<String> marketData) {
+		setParameter("marketData", marketData);
+	}
+
+	public SARequest withMarketData(java.util.Collection<String> marketData) {
+		setParameter("marketData", marketData);
+		return this;
+	}
+
+	public void setMarketData(String... marketData) {
+		setParameter("marketData", java.util.Arrays.asList(marketData));
+	}
+
+	public SARequest withMarketData(String... marketData) {
+		setParameter("marketData", java.util.Arrays.asList(marketData));
+		return this;
+	}
+
+
+	public void setScenarios(java.util.Collection<String> scenarios) {
+		setParameter("scenarios", scenarios);
+	}
+
+	public SARequest withScenarios(java.util.Collection<String> scenarios) {
+		setParameter("scenarios", scenarios);
+		return this;
+	}
+
+	public void setScenarios(String... scenarios) {
+		setParameter("scenarios", java.util.Arrays.asList(scenarios));
+	}
+
+	public SARequest withScenarios(String... scenarios) {
+		setParameter("scenarios", java.util.Arrays.asList(scenarios));
+		return this;
+	}
+
+
+	public void setReportCcy(java.lang.String reportCcy) {
+		setParameter("reportCcy", reportCcy);
+	}
+
+	public SARequest withReportCcy(java.lang.String reportCcy) {
+		setParameter("reportCcy", reportCcy);
+		return this;
+	}
+
+
+	public void setRow(java.lang.String row) {
+		setParameter("row", row);
+	}
+
+	public SARequest withRow(java.lang.String row) {
+		setParameter("row", row);
+		return this;
+	}
+
+
+	public void setTotalRow(java.lang.Boolean totalRow) {
+		setParameter("totalRow", totalRow);
+	}
+
+	public SARequest withTotalRow(java.lang.Boolean totalRow) {
+		setParameter("totalRow", totalRow);
+		return this;
+	}
+
+
 	@SuppressWarnings("unchecked")
 	public java.util.Collection<String> getPortfolios() {
 		return (java.util.Collection<String>)getParameter("portfolios");
@@ -68,6 +136,28 @@ public class SARequest extends com.clarusft.api.model.ApiRequest {
 
 	public java.time.LocalDate getValueDate() {
 		return (java.time.LocalDate)getParameter("valueDate");
+	}
+
+	@SuppressWarnings("unchecked")
+	public java.util.Collection<String> getMarketData() {
+		return (java.util.Collection<String>)getParameter("marketData");
+	}
+
+	@SuppressWarnings("unchecked")
+	public java.util.Collection<String> getScenarios() {
+		return (java.util.Collection<String>)getParameter("scenarios");
+	}
+
+	public java.lang.String getReportCcy() {
+		return (java.lang.String)getParameter("reportCcy");
+	}
+
+	public java.lang.String getRow() {
+		return (java.lang.String)getParameter("row");
+	}
+
+	public java.lang.Boolean getTotalRow() {
+		return (java.lang.Boolean)getParameter("totalRow");
 	}
 
 

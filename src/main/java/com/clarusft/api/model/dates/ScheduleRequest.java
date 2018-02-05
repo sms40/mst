@@ -5,7 +5,7 @@ import javax.annotation.Generated;
 @Generated("clarusft-ms-api-gen/com.clarusft.generator.Generator")
 public class ScheduleRequest extends com.clarusft.api.model.ApiRequest {
 	public ScheduleRequest() {
-		super("Dates", "Schedule", com.clarusft.api.OutputTypes.CSV, com.clarusft.api.model.ApiRequest.HTTP_POST);
+		super("Dates", "Schedule", com.clarusft.api.http.OutputTypes.CSV, com.clarusft.api.http.HttpMethod.POST);
 	}
 
 	public void setStartDate(java.time.LocalDate startDate) {

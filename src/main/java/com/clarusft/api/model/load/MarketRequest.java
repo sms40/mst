@@ -5,7 +5,7 @@ import javax.annotation.Generated;
 @Generated("clarusft-ms-api-gen/com.clarusft.generator.Generator")
 public class MarketRequest extends com.clarusft.api.model.ApiRequest {
 	public MarketRequest() {
-		super("Load", "Market", com.clarusft.api.OutputTypes.CSV, com.clarusft.api.model.ApiRequest.HTTP_POST);
+		super("Load", "Market", com.clarusft.api.http.OutputTypes.CSV, com.clarusft.api.http.HttpMethod.POST);
 	}
 
 	public void setMarketId(java.lang.String marketId) {

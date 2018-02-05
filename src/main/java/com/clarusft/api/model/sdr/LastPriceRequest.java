@@ -5,7 +5,7 @@ import javax.annotation.Generated;
 @Generated("clarusft-ms-api-gen/com.clarusft.generator.Generator")
 public class LastPriceRequest extends com.clarusft.api.model.ApiRequest {
 	public LastPriceRequest() {
-		super("SDR", "LastPrice", com.clarusft.api.OutputTypes.CSV, com.clarusft.api.model.ApiRequest.HTTP_POST);
+		super("SDR", "LastPrice", com.clarusft.api.http.OutputTypes.CSV, com.clarusft.api.http.HttpMethod.POST);
 	}
 
 	public void setTicker(String ticker) {

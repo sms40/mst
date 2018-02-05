@@ -5,7 +5,7 @@ import javax.annotation.Generated;
 @Generated("clarusft-ms-api-gen/com.clarusft.generator.Generator")
 public class FixingsRequest extends com.clarusft.api.model.ApiRequest {
 	public FixingsRequest() {
-		super("Market", "Fixings", com.clarusft.api.OutputTypes.CSV, com.clarusft.api.model.ApiRequest.HTTP_POST);
+		super("Market", "Fixings", com.clarusft.api.http.OutputTypes.CSV, com.clarusft.api.http.HttpMethod.POST);
 	}
 
 	public void setValueDate(java.time.LocalDate valueDate) {
@@ -14,6 +14,16 @@ public class FixingsRequest extends com.clarusft.api.model.ApiRequest {
 
 	public FixingsRequest withValueDate(java.time.LocalDate valueDate) {
 		setParameter("valueDate", valueDate);
+		return this;
+	}
+
+
+	public void setMarket(String market) {
+		setParameter("market", market);
+	}
+
+	public FixingsRequest withMarket(String market) {
+		setParameter("market", market);
 		return this;
 	}
 
@@ -58,8 +68,32 @@ public class FixingsRequest extends com.clarusft.api.model.ApiRequest {
 	}
 
 
+	public void setFixingType(String fixingType) {
+		setParameter("fixingType", fixingType);
+	}
+
+	public FixingsRequest withFixingType(String fixingType) {
+		setParameter("fixingType", fixingType);
+		return this;
+	}
+
+
+	public void setFormat(String format) {
+		setParameter("format", format);
+	}
+
+	public FixingsRequest withFormat(String format) {
+		setParameter("format", format);
+		return this;
+	}
+
+
 	public java.time.LocalDate getValueDate() {
 		return (java.time.LocalDate)getParameter("valueDate");
+	}
+
+	public String getMarket() {
+		return (String)getParameter("market");
 	}
 
 	public String getCurrency() {
@@ -76,6 +110,14 @@ public class FixingsRequest extends com.clarusft.api.model.ApiRequest {
 
 	public java.time.LocalDate getLastFixingDate() {
 		return (java.time.LocalDate)getParameter("lastFixingDate");
+	}
+
+	public String getFixingType() {
+		return (String)getParameter("fixingType");
+	}
+
+	public String getFormat() {
+		return (String)getParameter("format");
 	}
 
 

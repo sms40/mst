@@ -5,7 +5,7 @@ import javax.annotation.Generated;
 @Generated("clarusft-ms-api-gen/com.clarusft.generator.Generator")
 public class PLVectorsRequest extends com.clarusft.api.model.ApiRequest {
 	public PLVectorsRequest() {
-		super("Margin", "PLVectors", com.clarusft.api.OutputTypes.CSV, com.clarusft.api.model.ApiRequest.HTTP_POST);
+		super("Margin", "PLVectors", com.clarusft.api.http.OutputTypes.CSV, com.clarusft.api.http.HttpMethod.POST);
 	}
 
 	public void setPortfolios(java.util.Collection<String> portfolios) {
@@ -56,12 +56,120 @@ public class PLVectorsRequest extends com.clarusft.api.model.ApiRequest {
 	}
 
 
+	public void setMarketData(java.util.Collection<String> marketData) {
+		setParameter("marketData", marketData);
+	}
+
+	public PLVectorsRequest withMarketData(java.util.Collection<String> marketData) {
+		setParameter("marketData", marketData);
+		return this;
+	}
+
+	public void setMarketData(String... marketData) {
+		setParameter("marketData", java.util.Arrays.asList(marketData));
+	}
+
+	public PLVectorsRequest withMarketData(String... marketData) {
+		setParameter("marketData", java.util.Arrays.asList(marketData));
+		return this;
+	}
+
+
 	public void setModel(java.lang.String model) {
 		setParameter("model", model);
 	}
 
 	public PLVectorsRequest withModel(java.lang.String model) {
 		setParameter("model", model);
+		return this;
+	}
+
+
+	public void setHouseClient(String houseClient) {
+		setParameter("houseClient", houseClient);
+	}
+
+	public PLVectorsRequest withHouseClient(String houseClient) {
+		setParameter("houseClient", houseClient);
+		return this;
+	}
+
+
+	public void setMultiplier(java.lang.Double multiplier) {
+		setParameter("multiplier", multiplier);
+	}
+
+	public PLVectorsRequest withMultiplier(java.lang.Double multiplier) {
+		setParameter("multiplier", multiplier);
+		return this;
+	}
+
+
+	public void setAddons(java.lang.Boolean addons) {
+		setParameter("addons", addons);
+	}
+
+	public PLVectorsRequest withAddons(java.lang.Boolean addons) {
+		setParameter("addons", addons);
+		return this;
+	}
+
+
+	public void setMethod(String method) {
+		setParameter("method", method);
+	}
+
+	public PLVectorsRequest withMethod(String method) {
+		setParameter("method", method);
+		return this;
+	}
+
+
+	public void setScenarios(java.util.Collection<String> scenarios) {
+		setParameter("scenarios", scenarios);
+	}
+
+	public PLVectorsRequest withScenarios(java.util.Collection<String> scenarios) {
+		setParameter("scenarios", scenarios);
+		return this;
+	}
+
+	public void setScenarios(String... scenarios) {
+		setParameter("scenarios", java.util.Arrays.asList(scenarios));
+	}
+
+	public PLVectorsRequest withScenarios(String... scenarios) {
+		setParameter("scenarios", java.util.Arrays.asList(scenarios));
+		return this;
+	}
+
+
+	public void setReportCcy(java.lang.String reportCcy) {
+		setParameter("reportCcy", reportCcy);
+	}
+
+	public PLVectorsRequest withReportCcy(java.lang.String reportCcy) {
+		setParameter("reportCcy", reportCcy);
+		return this;
+	}
+
+
+	public void setRow(java.lang.String row) {
+		setParameter("row", row);
+	}
+
+	public PLVectorsRequest withRow(java.lang.String row) {
+		setParameter("row", row);
+		return this;
+	}
+
+
+	public void setTotalRow(java.lang.Boolean totalRow) {
+		setParameter("totalRow", totalRow);
+	}
+
+	public PLVectorsRequest withTotalRow(java.lang.Boolean totalRow) {
+		setParameter("totalRow", totalRow);
 		return this;
 	}
 
@@ -80,8 +188,46 @@ public class PLVectorsRequest extends com.clarusft.api.model.ApiRequest {
 		return (java.time.LocalDate)getParameter("valueDate");
 	}
 
+	@SuppressWarnings("unchecked")
+	public java.util.Collection<String> getMarketData() {
+		return (java.util.Collection<String>)getParameter("marketData");
+	}
+
 	public java.lang.String getModel() {
 		return (java.lang.String)getParameter("model");
+	}
+
+	public String getHouseClient() {
+		return (String)getParameter("houseClient");
+	}
+
+	public java.lang.Double getMultiplier() {
+		return (java.lang.Double)getParameter("multiplier");
+	}
+
+	public java.lang.Boolean getAddons() {
+		return (java.lang.Boolean)getParameter("addons");
+	}
+
+	public String getMethod() {
+		return (String)getParameter("method");
+	}
+
+	@SuppressWarnings("unchecked")
+	public java.util.Collection<String> getScenarios() {
+		return (java.util.Collection<String>)getParameter("scenarios");
+	}
+
+	public java.lang.String getReportCcy() {
+		return (java.lang.String)getParameter("reportCcy");
+	}
+
+	public java.lang.String getRow() {
+		return (java.lang.String)getParameter("row");
+	}
+
+	public java.lang.Boolean getTotalRow() {
+		return (java.lang.Boolean)getParameter("totalRow");
 	}
 
 

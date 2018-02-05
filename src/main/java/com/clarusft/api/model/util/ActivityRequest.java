@@ -5,7 +5,7 @@ import javax.annotation.Generated;
 @Generated("clarusft-ms-api-gen/com.clarusft.generator.Generator")
 public class ActivityRequest extends com.clarusft.api.model.ApiRequest {
 	public ActivityRequest() {
-		super("Util", "Activity", com.clarusft.api.OutputTypes.CSV, com.clarusft.api.model.ApiRequest.HTTP_POST);
+		super("Util", "Activity", com.clarusft.api.http.OutputTypes.CSV, com.clarusft.api.http.HttpMethod.POST);
 	}
 
 	public void setPeriod(java.lang.String period) {
@@ -48,6 +48,26 @@ public class ActivityRequest extends com.clarusft.api.model.ApiRequest {
 	}
 
 
+	public void setRow(java.lang.String row) {
+		setParameter("row", row);
+	}
+
+	public ActivityRequest withRow(java.lang.String row) {
+		setParameter("row", row);
+		return this;
+	}
+
+
+	public void setFilter(java.lang.String filter) {
+		setParameter("filter", filter);
+	}
+
+	public ActivityRequest withFilter(java.lang.String filter) {
+		setParameter("filter", filter);
+		return this;
+	}
+
+
 	public java.lang.String getPeriod() {
 		return (java.lang.String)getParameter("period");
 	}
@@ -62,6 +82,14 @@ public class ActivityRequest extends com.clarusft.api.model.ApiRequest {
 
 	public java.lang.String getStatus() {
 		return (java.lang.String)getParameter("Status");
+	}
+
+	public java.lang.String getRow() {
+		return (java.lang.String)getParameter("row");
+	}
+
+	public java.lang.String getFilter() {
+		return (java.lang.String)getParameter("filter");
 	}
 
 

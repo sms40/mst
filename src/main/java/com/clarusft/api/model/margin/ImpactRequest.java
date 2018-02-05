@@ -5,7 +5,7 @@ import javax.annotation.Generated;
 @Generated("clarusft-ms-api-gen/com.clarusft.generator.Generator")
 public class ImpactRequest extends com.clarusft.api.model.ApiRequest {
 	public ImpactRequest() {
-		super("Margin", "Impact", com.clarusft.api.OutputTypes.CSV, com.clarusft.api.model.ApiRequest.HTTP_POST);
+		super("Margin", "Impact", com.clarusft.api.http.OutputTypes.CSV, com.clarusft.api.http.HttpMethod.POST);
 	}
 
 	public void setPortfolios(java.util.Collection<String> portfolios) {
@@ -37,12 +37,71 @@ public class ImpactRequest extends com.clarusft.api.model.ApiRequest {
 	}
 
 
+	public void setMarketData(java.util.Collection<String> marketData) {
+		setParameter("marketData", marketData);
+	}
+
+	public ImpactRequest withMarketData(java.util.Collection<String> marketData) {
+		setParameter("marketData", marketData);
+		return this;
+	}
+
+	public void setMarketData(String... marketData) {
+		setParameter("marketData", java.util.Arrays.asList(marketData));
+	}
+
+	public ImpactRequest withMarketData(String... marketData) {
+		setParameter("marketData", java.util.Arrays.asList(marketData));
+		return this;
+	}
+
+
 	public void setModel(java.lang.String model) {
 		setParameter("model", model);
 	}
 
 	public ImpactRequest withModel(java.lang.String model) {
 		setParameter("model", model);
+		return this;
+	}
+
+
+	public void setHouseClient(String houseClient) {
+		setParameter("houseClient", houseClient);
+	}
+
+	public ImpactRequest withHouseClient(String houseClient) {
+		setParameter("houseClient", houseClient);
+		return this;
+	}
+
+
+	public void setMultiplier(java.lang.Double multiplier) {
+		setParameter("multiplier", multiplier);
+	}
+
+	public ImpactRequest withMultiplier(java.lang.Double multiplier) {
+		setParameter("multiplier", multiplier);
+		return this;
+	}
+
+
+	public void setAddons(java.lang.Boolean addons) {
+		setParameter("addons", addons);
+	}
+
+	public ImpactRequest withAddons(java.lang.Boolean addons) {
+		setParameter("addons", addons);
+		return this;
+	}
+
+
+	public void setParSwapLadder(java.lang.String parSwapLadder) {
+		setParameter("parSwapLadder", parSwapLadder);
+	}
+
+	public ImpactRequest withParSwapLadder(java.lang.String parSwapLadder) {
+		setParameter("parSwapLadder", parSwapLadder);
 		return this;
 	}
 
@@ -57,6 +116,83 @@ public class ImpactRequest extends com.clarusft.api.model.ApiRequest {
 	}
 
 
+	public void setNotionalSizes(java.util.Collection<String> notionalSizes) {
+		setParameter("notionalSizes", notionalSizes);
+	}
+
+	public ImpactRequest withNotionalSizes(java.util.Collection<String> notionalSizes) {
+		setParameter("notionalSizes", notionalSizes);
+		return this;
+	}
+
+	public void setNotionalSizes(String... notionalSizes) {
+		setParameter("notionalSizes", java.util.Arrays.asList(notionalSizes));
+	}
+
+	public ImpactRequest withNotionalSizes(String... notionalSizes) {
+		setParameter("notionalSizes", java.util.Arrays.asList(notionalSizes));
+		return this;
+	}
+
+
+	public void setDv01Sizes(java.util.Collection<String> dv01Sizes) {
+		setParameter("dv01Sizes", dv01Sizes);
+	}
+
+	public ImpactRequest withDv01Sizes(java.util.Collection<String> dv01Sizes) {
+		setParameter("dv01Sizes", dv01Sizes);
+		return this;
+	}
+
+	public void setDv01Sizes(String... dv01Sizes) {
+		setParameter("dv01Sizes", java.util.Arrays.asList(dv01Sizes));
+	}
+
+	public ImpactRequest withDv01Sizes(String... dv01Sizes) {
+		setParameter("dv01Sizes", java.util.Arrays.asList(dv01Sizes));
+		return this;
+	}
+
+
+	public void setCcpSwitch(java.lang.String ccpSwitch) {
+		setParameter("ccpSwitch", ccpSwitch);
+	}
+
+	public ImpactRequest withCcpSwitch(java.lang.String ccpSwitch) {
+		setParameter("ccpSwitch", ccpSwitch);
+		return this;
+	}
+
+
+	public void setReportCcy(java.lang.String reportCcy) {
+		setParameter("reportCcy", reportCcy);
+	}
+
+	public ImpactRequest withReportCcy(java.lang.String reportCcy) {
+		setParameter("reportCcy", reportCcy);
+		return this;
+	}
+
+
+	public void setParSwapTenors(java.util.Collection<String> parSwapTenors) {
+		setParameter("parSwapTenors", parSwapTenors);
+	}
+
+	public ImpactRequest withParSwapTenors(java.util.Collection<String> parSwapTenors) {
+		setParameter("parSwapTenors", parSwapTenors);
+		return this;
+	}
+
+	public void setParSwapTenors(String... parSwapTenors) {
+		setParameter("parSwapTenors", java.util.Arrays.asList(parSwapTenors));
+	}
+
+	public ImpactRequest withParSwapTenors(String... parSwapTenors) {
+		setParameter("parSwapTenors", java.util.Arrays.asList(parSwapTenors));
+		return this;
+	}
+
+
 	@SuppressWarnings("unchecked")
 	public java.util.Collection<String> getPortfolios() {
 		return (java.util.Collection<String>)getParameter("portfolios");
@@ -66,12 +202,56 @@ public class ImpactRequest extends com.clarusft.api.model.ApiRequest {
 		return (java.time.LocalDate)getParameter("valueDate");
 	}
 
+	@SuppressWarnings("unchecked")
+	public java.util.Collection<String> getMarketData() {
+		return (java.util.Collection<String>)getParameter("marketData");
+	}
+
 	public java.lang.String getModel() {
 		return (java.lang.String)getParameter("model");
 	}
 
+	public String getHouseClient() {
+		return (String)getParameter("houseClient");
+	}
+
+	public java.lang.Double getMultiplier() {
+		return (java.lang.Double)getParameter("multiplier");
+	}
+
+	public java.lang.Boolean getAddons() {
+		return (java.lang.Boolean)getParameter("addons");
+	}
+
+	public java.lang.String getParSwapLadder() {
+		return (java.lang.String)getParameter("parSwapLadder");
+	}
+
 	public java.lang.String getProduct() {
 		return (java.lang.String)getParameter("product");
+	}
+
+	@SuppressWarnings("unchecked")
+	public java.util.Collection<String> getNotionalSizes() {
+		return (java.util.Collection<String>)getParameter("notionalSizes");
+	}
+
+	@SuppressWarnings("unchecked")
+	public java.util.Collection<String> getDv01Sizes() {
+		return (java.util.Collection<String>)getParameter("dv01Sizes");
+	}
+
+	public java.lang.String getCcpSwitch() {
+		return (java.lang.String)getParameter("ccpSwitch");
+	}
+
+	public java.lang.String getReportCcy() {
+		return (java.lang.String)getParameter("reportCcy");
+	}
+
+	@SuppressWarnings("unchecked")
+	public java.util.Collection<String> getParSwapTenors() {
+		return (java.util.Collection<String>)getParameter("parSwapTenors");
 	}
 
 

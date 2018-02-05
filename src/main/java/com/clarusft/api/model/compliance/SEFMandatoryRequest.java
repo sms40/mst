@@ -5,7 +5,7 @@ import javax.annotation.Generated;
 @Generated("clarusft-ms-api-gen/com.clarusft.generator.Generator")
 public class SEFMandatoryRequest extends com.clarusft.api.model.ApiRequest {
 	public SEFMandatoryRequest() {
-		super("Compliance", "SEFMandatory", com.clarusft.api.OutputTypes.CSV, com.clarusft.api.model.ApiRequest.HTTP_POST);
+		super("Compliance", "SEFMandatory", com.clarusft.api.http.OutputTypes.CSV, com.clarusft.api.http.HttpMethod.POST);
 	}
 
 	public void setTrade(String trade) {

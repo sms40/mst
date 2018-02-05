@@ -5,7 +5,7 @@ import javax.annotation.Generated;
 @Generated("clarusft-ms-api-gen/com.clarusft.generator.Generator")
 public class VolumeADVRequest extends com.clarusft.api.model.ApiRequest {
 	public VolumeADVRequest() {
-		super("SDR", "VolumeADV", com.clarusft.api.OutputTypes.CSV, com.clarusft.api.model.ApiRequest.HTTP_POST);
+		super("SDR", "VolumeADV", com.clarusft.api.http.OutputTypes.CSV, com.clarusft.api.http.HttpMethod.POST);
 	}
 
 	public void setTicker(java.lang.String ticker) {

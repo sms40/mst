@@ -5,7 +5,7 @@ import javax.annotation.Generated;
 @Generated("clarusft-ms-api-gen/com.clarusft.generator.Generator")
 public class FxForwardDateRequest extends com.clarusft.api.model.ApiRequest {
 	public FxForwardDateRequest() {
-		super("Dates", "FxForwardDate", com.clarusft.api.OutputTypes.CSV, com.clarusft.api.model.ApiRequest.HTTP_POST);
+		super("Dates", "FxForwardDate", com.clarusft.api.http.OutputTypes.CSV, com.clarusft.api.http.HttpMethod.POST);
 	}
 
 	public void setFx(String fx) {

@@ -5,7 +5,7 @@ import javax.annotation.Generated;
 @Generated("clarusft-ms-api-gen/com.clarusft.generator.Generator")
 public class PortfolioRequest extends com.clarusft.api.model.ApiRequest {
 	public PortfolioRequest() {
-		super("Load", "Portfolio", com.clarusft.api.OutputTypes.CSV, com.clarusft.api.model.ApiRequest.HTTP_POST);
+		super("Load", "Portfolio", com.clarusft.api.http.OutputTypes.CSV, com.clarusft.api.http.HttpMethod.POST);
 	}
 
 	public void setPortfolioId(java.lang.String portfolioId) {
@@ -37,6 +37,36 @@ public class PortfolioRequest extends com.clarusft.api.model.ApiRequest {
 	}
 
 
+	public void setGroupBy(java.lang.String groupBy) {
+		setParameter("groupBy", groupBy);
+	}
+
+	public PortfolioRequest withGroupBy(java.lang.String groupBy) {
+		setParameter("groupBy", groupBy);
+		return this;
+	}
+
+
+	public void setAsOfDate(java.time.LocalDate asOfDate) {
+		setParameter("asOfDate", asOfDate);
+	}
+
+	public PortfolioRequest withAsOfDate(java.time.LocalDate asOfDate) {
+		setParameter("asOfDate", asOfDate);
+		return this;
+	}
+
+
+	public void setShare(java.lang.Boolean share) {
+		setParameter("share", share);
+	}
+
+	public PortfolioRequest withShare(java.lang.Boolean share) {
+		setParameter("share", share);
+		return this;
+	}
+
+
 	public java.lang.String getPortfolioId() {
 		return (java.lang.String)getParameter("portfolioId");
 	}
@@ -44,6 +74,18 @@ public class PortfolioRequest extends com.clarusft.api.model.ApiRequest {
 	@SuppressWarnings("unchecked")
 	public java.util.Collection<String> getPortfolios() {
 		return (java.util.Collection<String>)getParameter("portfolios");
+	}
+
+	public java.lang.String getGroupBy() {
+		return (java.lang.String)getParameter("groupBy");
+	}
+
+	public java.time.LocalDate getAsOfDate() {
+		return (java.time.LocalDate)getParameter("asOfDate");
+	}
+
+	public java.lang.Boolean getShare() {
+		return (java.lang.Boolean)getParameter("share");
 	}
 
 

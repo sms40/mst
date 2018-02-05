@@ -5,7 +5,7 @@ import javax.annotation.Generated;
 @Generated("clarusft-ms-api-gen/com.clarusft.generator.Generator")
 public class PriceRequest extends com.clarusft.api.model.ApiRequest {
 	public PriceRequest() {
-		super("Trade", "Price", com.clarusft.api.OutputTypes.CSV, com.clarusft.api.model.ApiRequest.HTTP_POST);
+		super("Trade", "Price", com.clarusft.api.http.OutputTypes.CSV, com.clarusft.api.http.HttpMethod.POST);
 	}
 
 	public void setTrade(String trade) {
@@ -38,6 +38,26 @@ public class PriceRequest extends com.clarusft.api.model.ApiRequest {
 	}
 
 
+	public void setMarket(String market) {
+		setParameter("market", market);
+	}
+
+	public PriceRequest withMarket(String market) {
+		setParameter("market", market);
+		return this;
+	}
+
+
+	public void setMarketData(String marketData) {
+		setParameter("marketData", marketData);
+	}
+
+	public PriceRequest withMarketData(String marketData) {
+		setParameter("marketData", marketData);
+		return this;
+	}
+
+
 	public String getTrade() {
 		return (String)getParameter("trade");
 	}
@@ -48,6 +68,14 @@ public class PriceRequest extends com.clarusft.api.model.ApiRequest {
 
 	public String getMeasures() {
 		return (String)getParameter("measures");
+	}
+
+	public String getMarket() {
+		return (String)getParameter("market");
+	}
+
+	public String getMarketData() {
+		return (String)getParameter("marketData");
 	}
 
 

@@ -5,7 +5,7 @@ import javax.annotation.Generated;
 @Generated("clarusft-ms-api-gen/com.clarusft.generator.Generator")
 public class MaintenancePeriodsRequest extends com.clarusft.api.model.ApiRequest {
 	public MaintenancePeriodsRequest() {
-		super("Dates", "MaintenancePeriods", com.clarusft.api.OutputTypes.CSV, com.clarusft.api.model.ApiRequest.HTTP_POST);
+		super("Dates", "MaintenancePeriods", com.clarusft.api.http.OutputTypes.CSV, com.clarusft.api.http.HttpMethod.POST);
 	}
 
 	public void setCentralBank(java.lang.String centralBank) {

@@ -5,7 +5,7 @@ import javax.annotation.Generated;
 @Generated("clarusft-ms-api-gen/com.clarusft.generator.Generator")
 public class LadderRequest extends com.clarusft.api.model.ApiRequest {
 	public LadderRequest() {
-		super("Load", "Ladder", com.clarusft.api.OutputTypes.CSV, com.clarusft.api.model.ApiRequest.HTTP_POST);
+		super("Load", "Ladder", com.clarusft.api.http.OutputTypes.CSV, com.clarusft.api.http.HttpMethod.POST);
 	}
 
 	public void setLadderId(java.lang.String ladderId) {

@@ -4,7 +4,7 @@ import java.io.IOException;
 
 import javax.annotation.Generated;
 
-import com.clarusft.api.HttpResp;
+import com.clarusft.api.http.HttpResp;
 import com.clarusft.api.model.frtb.ModellableRFResponse;
 
 @Generated("clarusft-ms-api-gen/com.clarusft.generator.Generator")

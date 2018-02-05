@@ -5,7 +5,7 @@ import javax.annotation.Generated;
 @Generated("clarusft-ms-api-gen/com.clarusft.generator.Generator")
 public class SensitivityRequest extends com.clarusft.api.model.ApiRequest {
 	public SensitivityRequest() {
-		super("SIMM", "Sensitivity", com.clarusft.api.OutputTypes.CSV, com.clarusft.api.model.ApiRequest.HTTP_POST);
+		super("SIMM", "Sensitivity", com.clarusft.api.http.OutputTypes.CSV, com.clarusft.api.http.HttpMethod.POST);
 	}
 
 	public void setValueDate(java.time.LocalDate valueDate) {

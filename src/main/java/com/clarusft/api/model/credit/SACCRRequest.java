@@ -5,7 +5,7 @@ import javax.annotation.Generated;
 @Generated("clarusft-ms-api-gen/com.clarusft.generator.Generator")
 public class SACCRRequest extends com.clarusft.api.model.ApiRequest {
 	public SACCRRequest() {
-		super("Credit", "SACCR", com.clarusft.api.OutputTypes.CSV, com.clarusft.api.model.ApiRequest.HTTP_POST);
+		super("Credit", "SACCR", com.clarusft.api.http.OutputTypes.CSV, com.clarusft.api.http.HttpMethod.POST);
 	}
 
 	public void setPortfolios(java.util.Collection<String> portfolios) {
@@ -56,6 +56,74 @@ public class SACCRRequest extends com.clarusft.api.model.ApiRequest {
 	}
 
 
+	public void setMarket(java.lang.String market) {
+		setParameter("market", market);
+	}
+
+	public SACCRRequest withMarket(java.lang.String market) {
+		setParameter("market", market);
+		return this;
+	}
+
+
+	public void setMarketData(java.util.Collection<String> marketData) {
+		setParameter("marketData", marketData);
+	}
+
+	public SACCRRequest withMarketData(java.util.Collection<String> marketData) {
+		setParameter("marketData", marketData);
+		return this;
+	}
+
+	public void setMarketData(String... marketData) {
+		setParameter("marketData", java.util.Arrays.asList(marketData));
+	}
+
+	public SACCRRequest withMarketData(String... marketData) {
+		setParameter("marketData", java.util.Arrays.asList(marketData));
+		return this;
+	}
+
+
+	public void setScenarios(java.util.Collection<String> scenarios) {
+		setParameter("scenarios", scenarios);
+	}
+
+	public SACCRRequest withScenarios(java.util.Collection<String> scenarios) {
+		setParameter("scenarios", scenarios);
+		return this;
+	}
+
+	public void setScenarios(String... scenarios) {
+		setParameter("scenarios", java.util.Arrays.asList(scenarios));
+	}
+
+	public SACCRRequest withScenarios(String... scenarios) {
+		setParameter("scenarios", java.util.Arrays.asList(scenarios));
+		return this;
+	}
+
+
+	public void setOffsetMaturities(java.lang.Boolean offsetMaturities) {
+		setParameter("offsetMaturities", offsetMaturities);
+	}
+
+	public SACCRRequest withOffsetMaturities(java.lang.Boolean offsetMaturities) {
+		setParameter("offsetMaturities", offsetMaturities);
+		return this;
+	}
+
+
+	public void setReportCcy(java.lang.String reportCcy) {
+		setParameter("reportCcy", reportCcy);
+	}
+
+	public SACCRRequest withReportCcy(java.lang.String reportCcy) {
+		setParameter("reportCcy", reportCcy);
+		return this;
+	}
+
+
 	@SuppressWarnings("unchecked")
 	public java.util.Collection<String> getPortfolios() {
 		return (java.util.Collection<String>)getParameter("portfolios");
@@ -68,6 +136,28 @@ public class SACCRRequest extends com.clarusft.api.model.ApiRequest {
 
 	public java.time.LocalDate getValueDate() {
 		return (java.time.LocalDate)getParameter("valueDate");
+	}
+
+	public java.lang.String getMarket() {
+		return (java.lang.String)getParameter("market");
+	}
+
+	@SuppressWarnings("unchecked")
+	public java.util.Collection<String> getMarketData() {
+		return (java.util.Collection<String>)getParameter("marketData");
+	}
+
+	@SuppressWarnings("unchecked")
+	public java.util.Collection<String> getScenarios() {
+		return (java.util.Collection<String>)getParameter("scenarios");
+	}
+
+	public java.lang.Boolean getOffsetMaturities() {
+		return (java.lang.Boolean)getParameter("offsetMaturities");
+	}
+
+	public java.lang.String getReportCcy() {
+		return (java.lang.String)getParameter("reportCcy");
 	}
 
 

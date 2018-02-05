@@ -6,9 +6,6 @@ import java.util.Map;
 public class ApiRequest {
 	private final Map<String, Object> parameters = new HashMap<>();
 	
-	public static final String HTTP_POST = "POST";
-	public static final String HTTP_GET = "GET";
-	
 	private String apiCategory, apiName, outputType, httpMethod;
 	
 	public ApiRequest() {
@@ -75,5 +72,4 @@ public class ApiRequest {
 	public void setHttpMethod(String httpMethod) {
 		this.httpMethod = httpMethod;
 	}
-	
 }

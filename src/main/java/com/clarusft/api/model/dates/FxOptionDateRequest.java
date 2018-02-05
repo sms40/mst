@@ -5,7 +5,7 @@ import javax.annotation.Generated;
 @Generated("clarusft-ms-api-gen/com.clarusft.generator.Generator")
 public class FxOptionDateRequest extends com.clarusft.api.model.ApiRequest {
 	public FxOptionDateRequest() {
-		super("Dates", "FxOptionDate", com.clarusft.api.OutputTypes.CSV, com.clarusft.api.model.ApiRequest.HTTP_POST);
+		super("Dates", "FxOptionDate", com.clarusft.api.http.OutputTypes.CSV, com.clarusft.api.http.HttpMethod.POST);
 	}
 
 	public void setFx(String fx) {
@@ -38,6 +38,16 @@ public class FxOptionDateRequest extends com.clarusft.api.model.ApiRequest {
 	}
 
 
+	public void setSettlementType(String settlementType) {
+		setParameter("settlementType", settlementType);
+	}
+
+	public FxOptionDateRequest withSettlementType(String settlementType) {
+		setParameter("settlementType", settlementType);
+		return this;
+	}
+
+
 	public String getFx() {
 		return (String)getParameter("fx");
 	}
@@ -48,6 +58,10 @@ public class FxOptionDateRequest extends com.clarusft.api.model.ApiRequest {
 
 	public String getMaturities() {
 		return (String)getParameter("maturities");
+	}
+
+	public String getSettlementType() {
+		return (String)getParameter("settlementType");
 	}
 
 

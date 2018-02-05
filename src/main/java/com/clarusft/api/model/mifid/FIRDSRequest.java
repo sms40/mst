@@ -5,7 +5,7 @@ import javax.annotation.Generated;
 @Generated("clarusft-ms-api-gen/com.clarusft.generator.Generator")
 public class FIRDSRequest extends com.clarusft.api.model.ApiRequest {
 	public FIRDSRequest() {
-		super("MIFID", "FIRDS", com.clarusft.api.OutputTypes.CSV, com.clarusft.api.model.ApiRequest.HTTP_POST);
+		super("MIFID", "FIRDS", com.clarusft.api.http.OutputTypes.CSV, com.clarusft.api.http.HttpMethod.POST);
 	}
 
 	public void setIsin(String isin) {

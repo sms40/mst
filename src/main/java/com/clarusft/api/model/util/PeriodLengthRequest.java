@@ -5,7 +5,7 @@ import javax.annotation.Generated;
 @Generated("clarusft-ms-api-gen/com.clarusft.generator.Generator")
 public class PeriodLengthRequest extends com.clarusft.api.model.ApiRequest {
 	public PeriodLengthRequest() {
-		super("Util", "PeriodLength", com.clarusft.api.OutputTypes.CSV, com.clarusft.api.model.ApiRequest.HTTP_POST);
+		super("Util", "PeriodLength", com.clarusft.api.http.OutputTypes.CSV, com.clarusft.api.http.HttpMethod.POST);
 	}
 
 	public void setStartDate(java.time.LocalDate startDate) {
@@ -38,6 +38,26 @@ public class PeriodLengthRequest extends com.clarusft.api.model.ApiRequest {
 	}
 
 
+	public void setHolidays(String holidays) {
+		setParameter("holidays", holidays);
+	}
+
+	public PeriodLengthRequest withHolidays(String holidays) {
+		setParameter("holidays", holidays);
+		return this;
+	}
+
+
+	public void setBusDay(String busDay) {
+		setParameter("busDay", busDay);
+	}
+
+	public PeriodLengthRequest withBusDay(String busDay) {
+		setParameter("busDay", busDay);
+		return this;
+	}
+
+
 	public java.time.LocalDate getStartDate() {
 		return (java.time.LocalDate)getParameter("startDate");
 	}
@@ -48,6 +68,14 @@ public class PeriodLengthRequest extends com.clarusft.api.model.ApiRequest {
 
 	public String getDaycount() {
 		return (String)getParameter("daycount");
+	}
+
+	public String getHolidays() {
+		return (String)getParameter("holidays");
+	}
+
+	public String getBusDay() {
+		return (String)getParameter("busDay");
 	}
 
 

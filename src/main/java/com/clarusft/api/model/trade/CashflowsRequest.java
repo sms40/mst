@@ -5,7 +5,7 @@ import javax.annotation.Generated;
 @Generated("clarusft-ms-api-gen/com.clarusft.generator.Generator")
 public class CashflowsRequest extends com.clarusft.api.model.ApiRequest {
 	public CashflowsRequest() {
-		super("Trade", "Cashflows", com.clarusft.api.OutputTypes.CSV, com.clarusft.api.model.ApiRequest.HTTP_POST);
+		super("Trade", "Cashflows", com.clarusft.api.http.OutputTypes.CSV, com.clarusft.api.http.HttpMethod.POST);
 	}
 
 	public void setTrade(String trade) {
@@ -28,12 +28,54 @@ public class CashflowsRequest extends com.clarusft.api.model.ApiRequest {
 	}
 
 
+	public void setMarket(String market) {
+		setParameter("market", market);
+	}
+
+	public CashflowsRequest withMarket(String market) {
+		setParameter("market", market);
+		return this;
+	}
+
+
+	public void setMarketData(String marketData) {
+		setParameter("marketData", marketData);
+	}
+
+	public CashflowsRequest withMarketData(String marketData) {
+		setParameter("marketData", marketData);
+		return this;
+	}
+
+
+	public void setIdFilter(java.lang.String idFilter) {
+		setParameter("idFilter", idFilter);
+	}
+
+	public CashflowsRequest withIdFilter(java.lang.String idFilter) {
+		setParameter("idFilter", idFilter);
+		return this;
+	}
+
+
 	public String getTrade() {
 		return (String)getParameter("trade");
 	}
 
 	public java.time.LocalDate getValueDate() {
 		return (java.time.LocalDate)getParameter("valueDate");
+	}
+
+	public String getMarket() {
+		return (String)getParameter("market");
+	}
+
+	public String getMarketData() {
+		return (String)getParameter("marketData");
+	}
+
+	public java.lang.String getIdFilter() {
+		return (java.lang.String)getParameter("idFilter");
 	}
 
 

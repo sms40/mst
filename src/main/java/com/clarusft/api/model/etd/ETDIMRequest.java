@@ -5,7 +5,7 @@ import javax.annotation.Generated;
 @Generated("clarusft-ms-api-gen/com.clarusft.generator.Generator")
 public class ETDIMRequest extends com.clarusft.api.model.ApiRequest {
 	public ETDIMRequest() {
-		super("ETD", "ETDIM", com.clarusft.api.OutputTypes.CSV, com.clarusft.api.model.ApiRequest.HTTP_POST);
+		super("ETD", "ETDIM", com.clarusft.api.http.OutputTypes.CSV, com.clarusft.api.http.HttpMethod.POST);
 	}
 
 	public void setEtdportfolio(java.lang.String etdportfolio) {

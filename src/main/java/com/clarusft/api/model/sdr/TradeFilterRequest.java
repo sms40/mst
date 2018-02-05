@@ -5,7 +5,7 @@ import javax.annotation.Generated;
 @Generated("clarusft-ms-api-gen/com.clarusft.generator.Generator")
 public class TradeFilterRequest extends com.clarusft.api.model.ApiRequest {
 	public TradeFilterRequest() {
-		super("SDR", "TradeFilter", com.clarusft.api.OutputTypes.CSV, com.clarusft.api.model.ApiRequest.HTTP_POST);
+		super("SDR", "TradeFilter", com.clarusft.api.http.OutputTypes.CSV, com.clarusft.api.http.HttpMethod.POST);
 	}
 
 	public void setReportDate(java.time.LocalDate reportDate) {
