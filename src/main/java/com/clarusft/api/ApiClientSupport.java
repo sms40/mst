@@ -22,6 +22,9 @@ import com.clarusft.api.http.HttpResp;
 import com.clarusft.api.model.ApiRequest;
 import com.clarusft.api.model.ApiResponse;
 import com.clarusft.api.model.SupportsDrilldown;
+import com.clarusft.api.model.SupportsFilter;
+import com.clarusft.api.model.SupportsPivot;
+import com.clarusft.api.model.SupportsTranspose;
 import com.clarusft.api.transform.ApiResponseParser;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -81,9 +84,24 @@ public abstract class ApiClientSupport {
 		if (response instanceof SupportsDrilldown) {
 			setDrilldownProvider((SupportsDrilldown) response);
 		}
+		if (response instanceof SupportsPivot) {
+			setPivotProvider((SupportsPivot) response);
+		}
+		if (response instanceof SupportsFilter) {
+			setFilterProvider((SupportsFilter) response);
+		}
+		if (response instanceof SupportsTranspose) {
+			setTransposeProvider((SupportsTranspose) response);
+		}
 	}
 
 	protected abstract void setDrilldownProvider(SupportsDrilldown response);
+	
+	protected abstract void setPivotProvider(SupportsPivot response);
+	
+	protected abstract void setFilterProvider(SupportsFilter response);
+	
+	protected abstract void setTransposeProvider(SupportsTranspose response);
 
 	protected void readResponse(HttpURLConnection conn, HttpResp resp) throws IOException {
 		resp.setResponseCode(conn.getResponseCode());

@@ -15,4 +15,19 @@ public class DefaultCsvResponse extends ApiResponse {
 	public String toString() {
 		return grid != null ? grid.toString() : super.toString();
 	}
+	
+	public void onPivot(PivotResponse pivotResponse) {
+		this.grid = pivotResponse.getGrid();
+		getStats().putAll(pivotResponse.getStats());
+	}
+	
+	public void onFilter(FilterResponse filterResponse) {
+		this.grid = filterResponse.getGrid();
+		getStats().putAll(filterResponse.getStats());
+	}
+	
+	public void onTranspose(TransposeResponse transposeResponse) {
+		this.grid = transposeResponse.getGrid();
+		getStats().putAll(transposeResponse.getStats());
+	}
 }

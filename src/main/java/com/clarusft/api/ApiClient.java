@@ -420,6 +420,12 @@ public class ApiClient extends ApiClientSupport {
 		return requestImpl(request, parser);
 	}
 		
+	public com.clarusft.api.model.market.FuturesResponse request(com.clarusft.api.model.market.FuturesRequest request) throws ApiException {
+		com.clarusft.api.transform.market.FuturesResponseParser parser = new com.clarusft.api.transform.market.FuturesResponseParser();
+
+		return requestImpl(request, parser);
+	}
+		
 	public com.clarusft.api.model.util.PeriodLengthResponse request(com.clarusft.api.model.util.PeriodLengthRequest request) throws ApiException {
 		com.clarusft.api.transform.util.PeriodLengthResponseParser parser = new com.clarusft.api.transform.util.PeriodLengthResponseParser();
 
@@ -540,6 +546,84 @@ public class ApiClient extends ApiClientSupport {
 				ddResponse.setDrilldownProvider(this);
 
 				return ddResponse;
+			}
+		});
+	}
+
+	@Override
+	protected void setPivotProvider(com.clarusft.api.model.SupportsPivot supportsPivot) {
+		supportsPivot.setPivotProvider(new com.clarusft.api.model.PivotProvider() {
+
+			@Override
+			public com.clarusft.api.model.PivotResponse pivot(Integer gridId, String row, String col, String ccy, String view)
+					throws ApiException {
+				com.clarusft.api.model.util.GridRequest request = new com.clarusft.api.model.util.GridRequest();
+
+				if (gridId != null) request.setGridId(gridId);
+				if (row != null)	request.setRow(row);
+				if (col != null)	request.setCol(col);
+				if (ccy != null)	request.setReportCcy(ccy);
+				if (view != null)	request.setView(view);
+
+				com.clarusft.api.model.util.GridResponse response = request(request);
+
+				com.clarusft.api.model.PivotResponse pivotResponse = new com.clarusft.api.model.PivotResponse();
+				pivotResponse.setHttpResponse(response.getHttpResponse());
+				pivotResponse.setGrid(response.getGrid());
+				pivotResponse.setStats(response.getStats());
+
+				return pivotResponse;
+			}
+
+		});
+	}
+
+	@Override
+	protected void setTransposeProvider(com.clarusft.api.model.SupportsTranspose supportsTranspose) {
+		supportsTranspose.setTransposeProvider(new com.clarusft.api.model.TransposeProvider() {
+
+			@Override
+			public com.clarusft.api.model.TransposeResponse transpose(Integer gridId)
+					throws ApiException {
+				com.clarusft.api.model.util.GridRequest request = new com.clarusft.api.model.util.GridRequest();
+
+				if (gridId != null) request.setGridId(gridId);
+				request.setRow("Transpose");
+				request.setCol("Transpose");
+
+				com.clarusft.api.model.util.GridResponse response = request(request);
+
+				com.clarusft.api.model.TransposeResponse transposeResponse = new com.clarusft.api.model.TransposeResponse();
+				transposeResponse.setHttpResponse(response.getHttpResponse());
+				transposeResponse.setGrid(response.getGrid());
+				transposeResponse.setStats(response.getStats());
+
+				return transposeResponse;
+			}
+		});
+	}
+
+
+	@Override
+	protected void setFilterProvider(com.clarusft.api.model.SupportsFilter supportsFilter) {
+		supportsFilter.setFilterProvider(new com.clarusft.api.model.FilterProvider() {
+
+			@Override
+			public com.clarusft.api.model.FilterResponse filter(Integer gridId, String filter)
+					throws ApiException {
+				com.clarusft.api.model.util.GridRequest request = new com.clarusft.api.model.util.GridRequest();
+
+				if (gridId != null) request.setGridId(gridId);
+				if (filter != null)	request.setFilter(filter);
+
+				com.clarusft.api.model.util.GridResponse response = request(request);
+
+				com.clarusft.api.model.FilterResponse filterResponse = new com.clarusft.api.model.FilterResponse();
+				filterResponse.setHttpResponse(response.getHttpResponse());
+				filterResponse.setGrid(response.getGrid());
+				filterResponse.setStats(response.getStats());
+
+				return filterResponse;
 			}
 		});
 	}

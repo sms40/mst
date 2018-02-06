@@ -58,6 +58,16 @@ public class CashflowsRequest extends com.clarusft.api.model.ApiRequest {
 	}
 
 
+	public void setView(String view) {
+		setParameter("view", view);
+	}
+
+	public CashflowsRequest withView(String view) {
+		setParameter("view", view);
+		return this;
+	}
+
+
 	public String getTrade() {
 		return (String)getParameter("trade");
 	}
@@ -76,6 +86,10 @@ public class CashflowsRequest extends com.clarusft.api.model.ApiRequest {
 
 	public java.lang.String getIdFilter() {
 		return (java.lang.String)getParameter("idFilter");
+	}
+
+	public String getView() {
+		return (String)getParameter("view");
 	}
 
 
