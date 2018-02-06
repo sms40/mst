@@ -269,6 +269,7 @@ public class StringGrid {
 					//first column header is not a "real" column header so strip it out
 					List<String> colHeaders = Arrays.asList(firstRow).subList(1, firstRow.length);
 					vg = new StringGrid(hasRowHeaders, colHeaders);
+					vg.setTitle(firstRow[0]);
 				} else {
 					List<String> colHeaders = Arrays.asList(firstRow);
 					vg = new StringGrid(hasRowHeaders, colHeaders);
