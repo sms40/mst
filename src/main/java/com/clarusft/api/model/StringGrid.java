@@ -40,6 +40,7 @@ public class StringGrid {
 
 	public void setTitle(String title) {
 		this.title = title;
+		updWidthDict("", title);
 	}
 
 	private void updWidthDict(String c, String v) {
