@@ -26,7 +26,6 @@ public class OptimiserRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setValueDate(java.time.LocalDate valueDate) {
 		setParameter("valueDate", valueDate);
 	}
@@ -35,7 +34,6 @@ public class OptimiserRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("valueDate", valueDate);
 		return this;
 	}
-
 
 	public void setOptimisation(String optimisation) {
 		setParameter("optimisation", optimisation);
@@ -46,7 +44,6 @@ public class OptimiserRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setMinSaving(java.lang.Double minSaving) {
 		setParameter("minSaving", minSaving);
 	}
@@ -55,7 +52,6 @@ public class OptimiserRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("minSaving", minSaving);
 		return this;
 	}
-
 
 	public void setMaxTradesToMove(java.lang.Integer maxTradesToMove) {
 		setParameter("maxTradesToMove", maxTradesToMove);
@@ -66,7 +62,6 @@ public class OptimiserRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setReportCcy(java.lang.String reportCcy) {
 		setParameter("reportCcy", reportCcy);
 	}
@@ -75,7 +70,6 @@ public class OptimiserRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("reportCcy", reportCcy);
 		return this;
 	}
-
 
 	public void setCcyFilter(java.util.Collection<String> ccyFilter) {
 		setParameter("ccyFilter", ccyFilter);
@@ -95,7 +89,6 @@ public class OptimiserRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setLargest(java.lang.Integer largest) {
 		setParameter("largest", largest);
 	}
@@ -104,7 +97,6 @@ public class OptimiserRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("largest", largest);
 		return this;
 	}
-
 
 	public void setMeasure(java.lang.String measure) {
 		setParameter("measure", measure);
@@ -115,7 +107,6 @@ public class OptimiserRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setBenefitOnly(java.lang.Boolean benefitOnly) {
 		setParameter("benefitOnly", benefitOnly);
 	}
@@ -125,7 +116,6 @@ public class OptimiserRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setIgnoreEligibility(java.lang.Boolean ignoreEligibility) {
 		setParameter("ignoreEligibility", ignoreEligibility);
 	}
@@ -134,7 +124,6 @@ public class OptimiserRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("ignoreEligibility", ignoreEligibility);
 		return this;
 	}
-
 
 	public void setBackLoading(java.lang.Boolean backLoading) {
 		setParameter("backLoading", backLoading);

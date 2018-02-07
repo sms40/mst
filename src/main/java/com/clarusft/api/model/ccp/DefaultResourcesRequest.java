@@ -17,7 +17,6 @@ public class DefaultResourcesRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setClearingHouse(String clearingHouse) {
 		setParameter("clearingHouse", clearingHouse);
 	}
@@ -26,7 +25,6 @@ public class DefaultResourcesRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("clearingHouse", clearingHouse);
 		return this;
 	}
-
 
 	public void setReportLevelIdentifier(String reportLevelIdentifier) {
 		setParameter("reportLevelIdentifier", reportLevelIdentifier);

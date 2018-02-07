@@ -17,7 +17,6 @@ public class PortfolioRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setPortfolios(java.util.Collection<String> portfolios) {
 		setParameter("portfolios", portfolios);
 	}
@@ -36,7 +35,6 @@ public class PortfolioRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setGroupBy(java.lang.String groupBy) {
 		setParameter("groupBy", groupBy);
 	}
@@ -46,7 +44,6 @@ public class PortfolioRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setAsOfDate(java.time.LocalDate asOfDate) {
 		setParameter("asOfDate", asOfDate);
 	}
@@ -55,7 +52,6 @@ public class PortfolioRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("asOfDate", asOfDate);
 		return this;
 	}
-
 
 	public void setShare(java.lang.Boolean share) {
 		setParameter("share", share);

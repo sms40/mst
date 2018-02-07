@@ -17,7 +17,6 @@ public class ScenarioRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setShifts(java.lang.String shifts) {
 		setParameter("shifts", shifts);
 	}
@@ -26,7 +25,6 @@ public class ScenarioRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("shifts", shifts);
 		return this;
 	}
-
 
 	public void setFactorExpression(java.lang.String factorExpression) {
 		setParameter("factorExpression", factorExpression);
@@ -37,7 +35,6 @@ public class ScenarioRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setRateType(String rateType) {
 		setParameter("rateType", rateType);
 	}
@@ -46,7 +43,6 @@ public class ScenarioRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("rateType", rateType);
 		return this;
 	}
-
 
 	public void setShiftType(String shiftType) {
 		setParameter("shiftType", shiftType);

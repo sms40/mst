@@ -26,7 +26,6 @@ public class VMBufferRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setWhatif(java.util.Collection<String> whatif) {
 		setParameter("whatif", whatif);
 	}
@@ -45,7 +44,6 @@ public class VMBufferRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setValueDate(java.time.LocalDate valueDate) {
 		setParameter("valueDate", valueDate);
 	}
@@ -54,7 +52,6 @@ public class VMBufferRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("valueDate", valueDate);
 		return this;
 	}
-
 
 	public void setMarketData(java.util.Collection<String> marketData) {
 		setParameter("marketData", marketData);
@@ -74,7 +71,6 @@ public class VMBufferRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setReportCcy(java.lang.String reportCcy) {
 		setParameter("reportCcy", reportCcy);
 	}
@@ -83,7 +79,6 @@ public class VMBufferRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("reportCcy", reportCcy);
 		return this;
 	}
-
 
 	public void setRow(java.lang.String row) {
 		setParameter("row", row);
@@ -94,7 +89,6 @@ public class VMBufferRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setTotalRow(java.lang.Boolean totalRow) {
 		setParameter("totalRow", totalRow);
 	}
@@ -103,7 +97,6 @@ public class VMBufferRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("totalRow", totalRow);
 		return this;
 	}
-
 
 	public void setObservatonPeriod(java.lang.String observatonPeriod) {
 		setParameter("observatonPeriod", observatonPeriod);
@@ -114,7 +107,6 @@ public class VMBufferRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setFXRisk(java.lang.Boolean fXRisk) {
 		setParameter("FXRisk", fXRisk);
 	}
@@ -123,7 +115,6 @@ public class VMBufferRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("FXRisk", fXRisk);
 		return this;
 	}
-
 
 	public void setConfidence(java.lang.Double confidence) {
 		setParameter("Confidence", confidence);
@@ -134,7 +125,6 @@ public class VMBufferRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setVaRLossMethod(String vaRLossMethod) {
 		setParameter("VaRLossMethod", vaRLossMethod);
 	}
@@ -144,7 +134,6 @@ public class VMBufferRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setMethod(String method) {
 		setParameter("method", method);
 	}
@@ -153,7 +142,6 @@ public class VMBufferRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("method", method);
 		return this;
 	}
-
 
 	public void setScenarios(java.util.Collection<String> scenarios) {
 		setParameter("scenarios", scenarios);

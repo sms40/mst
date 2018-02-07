@@ -26,7 +26,6 @@ public class ImpactRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setValueDate(java.time.LocalDate valueDate) {
 		setParameter("valueDate", valueDate);
 	}
@@ -35,7 +34,6 @@ public class ImpactRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("valueDate", valueDate);
 		return this;
 	}
-
 
 	public void setMarketData(java.util.Collection<String> marketData) {
 		setParameter("marketData", marketData);
@@ -55,7 +53,6 @@ public class ImpactRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setParSwapLadder(java.lang.String parSwapLadder) {
 		setParameter("parSwapLadder", parSwapLadder);
 	}
@@ -65,7 +62,6 @@ public class ImpactRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setProduct(java.lang.String product) {
 		setParameter("product", product);
 	}
@@ -74,7 +70,6 @@ public class ImpactRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("product", product);
 		return this;
 	}
-
 
 	public void setNotionalSizes(java.util.Collection<java.lang.Integer> notionalSizes) {
 		setParameter("notionalSizes", notionalSizes);
@@ -94,7 +89,6 @@ public class ImpactRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setDv01Sizes(java.util.Collection<java.lang.Integer> dv01Sizes) {
 		setParameter("dv01Sizes", dv01Sizes);
 	}
@@ -113,7 +107,6 @@ public class ImpactRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setReportCcy(java.lang.String reportCcy) {
 		setParameter("reportCcy", reportCcy);
 	}
@@ -122,7 +115,6 @@ public class ImpactRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("reportCcy", reportCcy);
 		return this;
 	}
-
 
 	public void setParSwapTenors(java.util.Collection<String> parSwapTenors) {
 		setParameter("parSwapTenors", parSwapTenors);

@@ -17,7 +17,6 @@ public class MaintenancePeriodsRequest extends com.clarusft.api.model.ApiRequest
 		return this;
 	}
 
-
 	public void setCurrency(String currency) {
 		setParameter("currency", currency);
 	}
@@ -26,7 +25,6 @@ public class MaintenancePeriodsRequest extends com.clarusft.api.model.ApiRequest
 		setParameter("currency", currency);
 		return this;
 	}
-
 
 	public void setYear(java.lang.Integer year) {
 		setParameter("year", year);

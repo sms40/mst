@@ -26,7 +26,6 @@ public class StressRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setWhatif(java.util.Collection<String> whatif) {
 		setParameter("whatif", whatif);
 	}
@@ -45,7 +44,6 @@ public class StressRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setValueDate(java.time.LocalDate valueDate) {
 		setParameter("valueDate", valueDate);
 	}
@@ -55,7 +53,6 @@ public class StressRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setMarket(java.lang.String market) {
 		setParameter("market", market);
 	}
@@ -64,7 +61,6 @@ public class StressRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("market", market);
 		return this;
 	}
-
 
 	public void setMarketData(java.util.Collection<String> marketData) {
 		setParameter("marketData", marketData);
@@ -84,7 +80,6 @@ public class StressRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setScenarios(java.util.Collection<String> scenarios) {
 		setParameter("scenarios", scenarios);
 	}
@@ -103,7 +98,6 @@ public class StressRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setReportCcy(java.lang.String reportCcy) {
 		setParameter("reportCcy", reportCcy);
 	}
@@ -112,7 +106,6 @@ public class StressRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("reportCcy", reportCcy);
 		return this;
 	}
-
 
 	public void setRow(java.lang.String row) {
 		setParameter("row", row);
@@ -123,7 +116,6 @@ public class StressRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setCol(java.lang.String col) {
 		setParameter("col", col);
 	}
@@ -133,7 +125,6 @@ public class StressRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setTotalRow(java.lang.Boolean totalRow) {
 		setParameter("totalRow", totalRow);
 	}
@@ -142,7 +133,6 @@ public class StressRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("totalRow", totalRow);
 		return this;
 	}
-
 
 	public void setTotalCol(java.lang.Boolean totalCol) {
 		setParameter("totalCol", totalCol);

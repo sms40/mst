@@ -17,7 +17,6 @@ public class CurveUsageRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setMarket(String market) {
 		setParameter("market", market);
 	}
@@ -27,7 +26,6 @@ public class CurveUsageRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setCurrency(String currency) {
 		setParameter("currency", currency);
 	}
@@ -36,7 +34,6 @@ public class CurveUsageRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("currency", currency);
 		return this;
 	}
-
 
 	public void setFormat(String format) {
 		setParameter("Format", format);

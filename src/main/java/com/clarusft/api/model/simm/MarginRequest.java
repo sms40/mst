@@ -17,7 +17,6 @@ public class MarginRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setValueDate(java.time.LocalDate valueDate) {
 		setParameter("valueDate", valueDate);
 	}
@@ -26,7 +25,6 @@ public class MarginRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("valueDate", valueDate);
 		return this;
 	}
-
 
 	public void setPortfolios(java.util.Collection<String> portfolios) {
 		setParameter("portfolios", portfolios);
@@ -46,7 +44,6 @@ public class MarginRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setWhatif(java.util.Collection<String> whatif) {
 		setParameter("whatif", whatif);
 	}
@@ -65,7 +62,6 @@ public class MarginRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setWhatifPortfolioID(java.lang.String whatifPortfolioID) {
 		setParameter("whatifPortfolioID", whatifPortfolioID);
 	}
@@ -74,7 +70,6 @@ public class MarginRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("whatifPortfolioID", whatifPortfolioID);
 		return this;
 	}
-
 
 	public void setVersion(java.lang.String version) {
 		setParameter("version", version);
@@ -85,7 +80,6 @@ public class MarginRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setAddons(java.lang.Boolean addons) {
 		setParameter("addons", addons);
 	}
@@ -94,7 +88,6 @@ public class MarginRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("addons", addons);
 		return this;
 	}
-
 
 	public void setCcys(java.util.Collection<String> ccys) {
 		setParameter("ccys", ccys);
@@ -113,7 +106,6 @@ public class MarginRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("ccys", java.util.Arrays.asList(ccys));
 		return this;
 	}
-
 
 	public void setScenarios(java.util.Collection<String> scenarios) {
 		setParameter("scenarios", scenarios);

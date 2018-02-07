@@ -17,7 +17,6 @@ public class FxForwardDateRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setTradeDate(String tradeDate) {
 		setParameter("tradeDate", tradeDate);
 	}
@@ -26,7 +25,6 @@ public class FxForwardDateRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("tradeDate", tradeDate);
 		return this;
 	}
-
 
 	public void setMaturities(String maturities) {
 		setParameter("maturities", maturities);

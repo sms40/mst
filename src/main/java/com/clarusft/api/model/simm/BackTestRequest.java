@@ -17,7 +17,6 @@ public class BackTestRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setValueDate(java.time.LocalDate valueDate) {
 		setParameter("valueDate", valueDate);
 	}
@@ -26,7 +25,6 @@ public class BackTestRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("valueDate", valueDate);
 		return this;
 	}
-
 
 	public void setPortfolios(java.util.Collection<String> portfolios) {
 		setParameter("portfolios", portfolios);
@@ -46,7 +44,6 @@ public class BackTestRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setWhatif(java.util.Collection<String> whatif) {
 		setParameter("whatif", whatif);
 	}
@@ -65,7 +62,6 @@ public class BackTestRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setWhatifPortfolioID(java.lang.String whatifPortfolioID) {
 		setParameter("whatifPortfolioID", whatifPortfolioID);
 	}
@@ -75,7 +71,6 @@ public class BackTestRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setAddons(java.lang.Boolean addons) {
 		setParameter("addons", addons);
 	}
@@ -84,7 +79,6 @@ public class BackTestRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("addons", addons);
 		return this;
 	}
-
 
 	public void setCcys(java.util.Collection<String> ccys) {
 		setParameter("ccys", ccys);
@@ -104,7 +98,6 @@ public class BackTestRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setNumDates(java.lang.Integer numDates) {
 		setParameter("numDates", numDates);
 	}
@@ -114,7 +107,6 @@ public class BackTestRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setStartDate(java.time.LocalDate startDate) {
 		setParameter("startDate", startDate);
 	}
@@ -123,7 +115,6 @@ public class BackTestRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("startDate", startDate);
 		return this;
 	}
-
 
 	public void setEndDate(java.time.LocalDate endDate) {
 		setParameter("endDate", endDate);

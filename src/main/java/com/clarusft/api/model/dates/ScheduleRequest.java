@@ -17,7 +17,6 @@ public class ScheduleRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setEndDate(java.time.LocalDate endDate) {
 		setParameter("endDate", endDate);
 	}
@@ -26,7 +25,6 @@ public class ScheduleRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("endDate", endDate);
 		return this;
 	}
-
 
 	public void setRollConvention(String rollConvention) {
 		setParameter("rollConvention", rollConvention);
@@ -37,7 +35,6 @@ public class ScheduleRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setFrequency(String frequency) {
 		setParameter("frequency", frequency);
 	}
@@ -47,7 +44,6 @@ public class ScheduleRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setCurrency(String currency) {
 		setParameter("currency", currency);
 	}
@@ -56,7 +52,6 @@ public class ScheduleRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("currency", currency);
 		return this;
 	}
-
 
 	public void setBusDayConvention(String busDayConvention) {
 		setParameter("busDayConvention", busDayConvention);

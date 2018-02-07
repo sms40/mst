@@ -17,7 +17,6 @@ public class SensitivityRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setTrades(String trades) {
 		setParameter("trades", trades);
 	}
@@ -27,7 +26,6 @@ public class SensitivityRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setAggregationLevel(String aggregationLevel) {
 		setParameter("aggregationLevel", aggregationLevel);
 	}
@@ -36,7 +34,6 @@ public class SensitivityRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("aggregationLevel", aggregationLevel);
 		return this;
 	}
-
 
 	public void setPortfolioID(java.lang.String portfolioID) {
 		setParameter("portfolioID", portfolioID);

@@ -17,7 +17,6 @@ public class GridRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setReportCcy(java.lang.String reportCcy) {
 		setParameter("reportCcy", reportCcy);
 	}
@@ -26,7 +25,6 @@ public class GridRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("reportCcy", reportCcy);
 		return this;
 	}
-
 
 	public void setRow(java.lang.String row) {
 		setParameter("row", row);
@@ -37,7 +35,6 @@ public class GridRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setCol(java.lang.String col) {
 		setParameter("col", col);
 	}
@@ -46,7 +43,6 @@ public class GridRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("col", col);
 		return this;
 	}
-
 
 	public void setFilter(java.lang.String filter) {
 		setParameter("filter", filter);
@@ -57,7 +53,6 @@ public class GridRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setGridId(java.lang.Integer gridId) {
 		setParameter("GridId", gridId);
 	}
@@ -66,7 +61,6 @@ public class GridRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("GridId", gridId);
 		return this;
 	}
-
 
 	public void setDrilldownRow(java.lang.String drilldownRow) {
 		setParameter("drilldownRow", drilldownRow);
@@ -77,7 +71,6 @@ public class GridRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setDrilldownCol(java.lang.String drilldownCol) {
 		setParameter("drilldownCol", drilldownCol);
 	}
@@ -86,7 +79,6 @@ public class GridRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("drilldownCol", drilldownCol);
 		return this;
 	}
-
 
 	public void setDrilldownView(String drilldownView) {
 		setParameter("drilldownView", drilldownView);
@@ -97,7 +89,6 @@ public class GridRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setMaxRows(java.lang.Integer maxRows) {
 		setParameter("maxRows", maxRows);
 	}
@@ -106,7 +97,6 @@ public class GridRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("maxRows", maxRows);
 		return this;
 	}
-
 
 	public void setMaxCols(java.lang.Integer maxCols) {
 		setParameter("maxCols", maxCols);
@@ -117,7 +107,6 @@ public class GridRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setTotalRow(java.lang.Boolean totalRow) {
 		setParameter("totalRow", totalRow);
 	}
@@ -126,7 +115,6 @@ public class GridRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("totalRow", totalRow);
 		return this;
 	}
-
 
 	public void setTotalCol(java.lang.Boolean totalCol) {
 		setParameter("totalCol", totalCol);

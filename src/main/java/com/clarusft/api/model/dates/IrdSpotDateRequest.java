@@ -17,7 +17,6 @@ public class IrdSpotDateRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setTradeDate(String tradeDate) {
 		setParameter("tradeDate", tradeDate);
 	}

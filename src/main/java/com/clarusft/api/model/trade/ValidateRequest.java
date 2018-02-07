@@ -17,7 +17,6 @@ public class ValidateRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setRuleFilter(String ruleFilter) {
 		setParameter("ruleFilter", ruleFilter);
 	}

@@ -17,7 +17,6 @@ public class FIRDSRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setTradingVenue(java.lang.String tradingVenue) {
 		setParameter("tradingVenue", tradingVenue);
 	}
@@ -26,7 +25,6 @@ public class FIRDSRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("tradingVenue", tradingVenue);
 		return this;
 	}
-
 
 	public void setClassificationType(java.lang.String classificationType) {
 		setParameter("classificationType", classificationType);
@@ -37,7 +35,6 @@ public class FIRDSRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setIndex(java.lang.String index) {
 		setParameter("index", index);
 	}
@@ -46,7 +43,6 @@ public class FIRDSRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("index", index);
 		return this;
 	}
-
 
 	public void setTerm(String term) {
 		setParameter("term", term);
@@ -57,7 +53,6 @@ public class FIRDSRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setMaturityDate(java.time.LocalDate maturityDate) {
 		setParameter("maturityDate", maturityDate);
 	}
@@ -66,7 +61,6 @@ public class FIRDSRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("maturityDate", maturityDate);
 		return this;
 	}
-
 
 	public void setCurrency(String currency) {
 		setParameter("currency", currency);

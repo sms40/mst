@@ -17,7 +17,6 @@ public class SummaryRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setFilter(java.lang.String filter) {
 		setParameter("filter", filter);
 	}

@@ -26,7 +26,6 @@ public class VaRVectorsRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setWhatif(java.util.Collection<String> whatif) {
 		setParameter("whatif", whatif);
 	}
@@ -45,7 +44,6 @@ public class VaRVectorsRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setValueDate(java.time.LocalDate valueDate) {
 		setParameter("valueDate", valueDate);
 	}
@@ -54,7 +52,6 @@ public class VaRVectorsRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("valueDate", valueDate);
 		return this;
 	}
-
 
 	public void setMarketData(java.util.Collection<String> marketData) {
 		setParameter("marketData", marketData);
@@ -74,7 +71,6 @@ public class VaRVectorsRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setShiftSet(java.lang.String shiftSet) {
 		setParameter("shiftSet", shiftSet);
 	}
@@ -83,7 +79,6 @@ public class VaRVectorsRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("shiftSet", shiftSet);
 		return this;
 	}
-
 
 	public void setMethod(String method) {
 		setParameter("method", method);
@@ -94,7 +89,6 @@ public class VaRVectorsRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setFXRisk(java.lang.Boolean fXRisk) {
 		setParameter("FXRisk", fXRisk);
 	}
@@ -103,7 +97,6 @@ public class VaRVectorsRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("FXRisk", fXRisk);
 		return this;
 	}
-
 
 	public void setScenarios(java.util.Collection<String> scenarios) {
 		setParameter("scenarios", scenarios);
@@ -123,7 +116,6 @@ public class VaRVectorsRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setReportCcy(java.lang.String reportCcy) {
 		setParameter("reportCcy", reportCcy);
 	}
@@ -133,7 +125,6 @@ public class VaRVectorsRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setRow(java.lang.String row) {
 		setParameter("row", row);
 	}
@@ -142,7 +133,6 @@ public class VaRVectorsRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("row", row);
 		return this;
 	}
-
 
 	public void setTotalRow(java.lang.Boolean totalRow) {
 		setParameter("totalRow", totalRow);

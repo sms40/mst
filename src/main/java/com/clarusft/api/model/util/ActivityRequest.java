@@ -17,7 +17,6 @@ public class ActivityRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setSource(java.lang.String source) {
 		setParameter("Source", source);
 	}
@@ -26,7 +25,6 @@ public class ActivityRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("Source", source);
 		return this;
 	}
-
 
 	public void setService(java.lang.String service) {
 		setParameter("Service", service);
@@ -37,7 +35,6 @@ public class ActivityRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setStatus(java.lang.String status) {
 		setParameter("Status", status);
 	}
@@ -47,7 +44,6 @@ public class ActivityRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setRow(java.lang.String row) {
 		setParameter("row", row);
 	}
@@ -56,7 +52,6 @@ public class ActivityRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("row", row);
 		return this;
 	}
-
 
 	public void setFilter(java.lang.String filter) {
 		setParameter("filter", filter);

@@ -17,7 +17,6 @@ public class FixingDatesRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setFloatingRateOption(String floatingRateOption) {
 		setParameter("floatingRateOption", floatingRateOption);
 	}
@@ -26,7 +25,6 @@ public class FixingDatesRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("floatingRateOption", floatingRateOption);
 		return this;
 	}
-
 
 	public void setMaturity(String maturity) {
 		setParameter("maturity", maturity);

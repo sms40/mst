@@ -17,7 +17,6 @@ public class PriceRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setValueDate(java.time.LocalDate valueDate) {
 		setParameter("valueDate", valueDate);
 	}
@@ -26,7 +25,6 @@ public class PriceRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("valueDate", valueDate);
 		return this;
 	}
-
 
 	public void setMeasures(String measures) {
 		setParameter("measures", measures);
@@ -37,7 +35,6 @@ public class PriceRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setMarket(String market) {
 		setParameter("market", market);
 	}
@@ -46,7 +43,6 @@ public class PriceRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("market", market);
 		return this;
 	}
-
 
 	public void setMarketData(String marketData) {
 		setParameter("marketData", marketData);

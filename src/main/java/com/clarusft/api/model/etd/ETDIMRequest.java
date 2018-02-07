@@ -17,7 +17,6 @@ public class ETDIMRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setDetail(java.lang.String detail) {
 		setParameter("detail", detail);
 	}

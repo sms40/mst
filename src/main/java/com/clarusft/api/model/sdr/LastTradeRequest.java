@@ -17,7 +17,6 @@ public class LastTradeRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setReportDate(java.time.LocalDate reportDate) {
 		setParameter("reportDate", reportDate);
 	}
@@ -26,7 +25,6 @@ public class LastTradeRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("reportDate", reportDate);
 		return this;
 	}
-
 
 	public void setCleared(String cleared) {
 		setParameter("cleared", cleared);
@@ -37,7 +35,6 @@ public class LastTradeRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setSef(String sef) {
 		setParameter("sef", sef);
 	}
@@ -47,7 +44,6 @@ public class LastTradeRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setDco(String dco) {
 		setParameter("dco", dco);
 	}
@@ -56,7 +52,6 @@ public class LastTradeRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("dco", dco);
 		return this;
 	}
-
 
 	public void setSource(String source) {
 		setParameter("source", source);

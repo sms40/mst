@@ -26,7 +26,6 @@ public class MVARequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setWhatif(java.util.Collection<String> whatif) {
 		setParameter("whatif", whatif);
 	}
@@ -45,7 +44,6 @@ public class MVARequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setValueDate(java.time.LocalDate valueDate) {
 		setParameter("valueDate", valueDate);
 	}
@@ -54,7 +52,6 @@ public class MVARequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("valueDate", valueDate);
 		return this;
 	}
-
 
 	public void setMarketData(java.util.Collection<String> marketData) {
 		setParameter("marketData", marketData);
@@ -74,7 +71,6 @@ public class MVARequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setModel(java.lang.String model) {
 		setParameter("model", model);
 	}
@@ -83,7 +79,6 @@ public class MVARequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("model", model);
 		return this;
 	}
-
 
 	public void setHouseClient(String houseClient) {
 		setParameter("houseClient", houseClient);
@@ -94,7 +89,6 @@ public class MVARequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setMultiplier(java.lang.Double multiplier) {
 		setParameter("multiplier", multiplier);
 	}
@@ -104,7 +98,6 @@ public class MVARequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setAddons(java.lang.Boolean addons) {
 		setParameter("addons", addons);
 	}
@@ -113,7 +106,6 @@ public class MVARequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("addons", addons);
 		return this;
 	}
-
 
 	public void setScenarios(java.util.Collection<String> scenarios) {
 		setParameter("scenarios", scenarios);
@@ -133,7 +125,6 @@ public class MVARequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setAgePortfolio(java.lang.Boolean agePortfolio) {
 		setParameter("agePortfolio", agePortfolio);
 	}
@@ -142,7 +133,6 @@ public class MVARequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("agePortfolio", agePortfolio);
 		return this;
 	}
-
 
 	public void setLadder(java.lang.String ladder) {
 		setParameter("ladder", ladder);
@@ -153,7 +143,6 @@ public class MVARequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setReportCcy(java.lang.String reportCcy) {
 		setParameter("reportCcy", reportCcy);
 	}
@@ -162,7 +151,6 @@ public class MVARequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("reportCcy", reportCcy);
 		return this;
 	}
-
 
 	public void setRow(java.lang.String row) {
 		setParameter("row", row);
@@ -173,7 +161,6 @@ public class MVARequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setTotalRow(java.lang.Boolean totalRow) {
 		setParameter("totalRow", totalRow);
 	}
@@ -183,7 +170,6 @@ public class MVARequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setFundingSpread(java.lang.Double fundingSpread) {
 		setParameter("fundingSpread", fundingSpread);
 	}
@@ -192,7 +178,6 @@ public class MVARequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("fundingSpread", fundingSpread);
 		return this;
 	}
-
 
 	public void setUnits(java.lang.String units) {
 		setParameter("units", units);

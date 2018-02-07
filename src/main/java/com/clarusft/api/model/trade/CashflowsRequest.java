@@ -17,7 +17,6 @@ public class CashflowsRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setValueDate(java.time.LocalDate valueDate) {
 		setParameter("valueDate", valueDate);
 	}
@@ -26,7 +25,6 @@ public class CashflowsRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("valueDate", valueDate);
 		return this;
 	}
-
 
 	public void setMarket(String market) {
 		setParameter("market", market);
@@ -37,7 +35,6 @@ public class CashflowsRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setMarketData(String marketData) {
 		setParameter("marketData", marketData);
 	}
@@ -47,7 +44,6 @@ public class CashflowsRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setIdFilter(java.lang.String idFilter) {
 		setParameter("idFilter", idFilter);
 	}
@@ -56,7 +52,6 @@ public class CashflowsRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("idFilter", idFilter);
 		return this;
 	}
-
 
 	public void setView(String view) {
 		setParameter("view", view);

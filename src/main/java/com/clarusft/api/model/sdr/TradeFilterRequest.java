@@ -17,7 +17,6 @@ public class TradeFilterRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setCleared(String cleared) {
 		setParameter("cleared", cleared);
 	}
@@ -26,7 +25,6 @@ public class TradeFilterRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("cleared", cleared);
 		return this;
 	}
-
 
 	public void setSef(String sef) {
 		setParameter("sef", sef);
@@ -37,7 +35,6 @@ public class TradeFilterRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setSource(String source) {
 		setParameter("source", source);
 	}
@@ -46,7 +43,6 @@ public class TradeFilterRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("source", source);
 		return this;
 	}
-
 
 	public void setTaxonomy(String taxonomy) {
 		setParameter("taxonomy", taxonomy);
@@ -57,7 +53,6 @@ public class TradeFilterRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setCurrency(String currency) {
 		setParameter("currency", currency);
 	}
@@ -67,7 +62,6 @@ public class TradeFilterRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setPackage(String p) {
 		setParameter("package", p);
 	}
@@ -76,7 +70,6 @@ public class TradeFilterRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("package", p);
 		return this;
 	}
-
 
 	public void setSubtype(String subtype) {
 		setParameter("subtype", subtype);

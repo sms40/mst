@@ -17,7 +17,6 @@ public class LadderRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setTenors(java.util.Collection<String> tenors) {
 		setParameter("tenors", tenors);
 	}

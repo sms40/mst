@@ -17,7 +17,6 @@ public class TradesRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setPortfolios(java.util.Collection<String> portfolios) {
 		setParameter("portfolios", portfolios);
 	}
@@ -36,7 +35,6 @@ public class TradesRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setFormat(java.lang.String format) {
 		setParameter("format", format);
 	}
@@ -45,7 +43,6 @@ public class TradesRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("format", format);
 		return this;
 	}
-
 
 	public void setTradeAttributes(java.util.Collection<String> tradeAttributes) {
 		setParameter("tradeAttributes", tradeAttributes);

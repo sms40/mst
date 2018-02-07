@@ -17,7 +17,6 @@ public class ParDV01Request extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setCcys(java.util.Collection<String> ccys) {
 		setParameter("ccys", ccys);
 	}
@@ -36,7 +35,6 @@ public class ParDV01Request extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setLadder(java.lang.String ladder) {
 		setParameter("ladder", ladder);
 	}
@@ -45,7 +43,6 @@ public class ParDV01Request extends com.clarusft.api.model.ApiRequest {
 		setParameter("ladder", ladder);
 		return this;
 	}
-
 
 	public void setTenors(java.util.Collection<String> tenors) {
 		setParameter("tenors", tenors);
@@ -64,7 +61,6 @@ public class ParDV01Request extends com.clarusft.api.model.ApiRequest {
 		setParameter("tenors", java.util.Arrays.asList(tenors));
 		return this;
 	}
-
 
 	public void setMarketData(java.util.Collection<String> marketData) {
 		setParameter("marketData", marketData);

@@ -17,7 +17,6 @@ public class FixingsRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setMarket(String market) {
 		setParameter("market", market);
 	}
@@ -26,7 +25,6 @@ public class FixingsRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("market", market);
 		return this;
 	}
-
 
 	public void setCurrency(String currency) {
 		setParameter("currency", currency);
@@ -37,7 +35,6 @@ public class FixingsRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setMaturities(String maturities) {
 		setParameter("maturities", maturities);
 	}
@@ -46,7 +43,6 @@ public class FixingsRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("maturities", maturities);
 		return this;
 	}
-
 
 	public void setFirstFixingDate(java.time.LocalDate firstFixingDate) {
 		setParameter("firstFixingDate", firstFixingDate);
@@ -57,7 +53,6 @@ public class FixingsRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setLastFixingDate(java.time.LocalDate lastFixingDate) {
 		setParameter("lastFixingDate", lastFixingDate);
 	}
@@ -67,7 +62,6 @@ public class FixingsRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setFixingType(String fixingType) {
 		setParameter("fixingType", fixingType);
 	}
@@ -76,7 +70,6 @@ public class FixingsRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("fixingType", fixingType);
 		return this;
 	}
-
 
 	public void setFormat(String format) {
 		setParameter("format", format);

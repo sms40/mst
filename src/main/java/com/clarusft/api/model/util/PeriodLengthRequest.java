@@ -17,7 +17,6 @@ public class PeriodLengthRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setEndDate(java.time.LocalDate endDate) {
 		setParameter("endDate", endDate);
 	}
@@ -26,7 +25,6 @@ public class PeriodLengthRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("endDate", endDate);
 		return this;
 	}
-
 
 	public void setDaycount(String daycount) {
 		setParameter("daycount", daycount);
@@ -37,7 +35,6 @@ public class PeriodLengthRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setHolidays(String holidays) {
 		setParameter("holidays", holidays);
 	}
@@ -46,7 +43,6 @@ public class PeriodLengthRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("holidays", holidays);
 		return this;
 	}
-
 
 	public void setBusDay(String busDay) {
 		setParameter("busDay", busDay);

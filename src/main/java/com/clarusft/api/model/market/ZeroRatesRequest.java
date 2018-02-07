@@ -17,7 +17,6 @@ public class ZeroRatesRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setMarket(java.lang.String market) {
 		setParameter("market", market);
 	}
@@ -26,7 +25,6 @@ public class ZeroRatesRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("market", market);
 		return this;
 	}
-
 
 	public void setMarketData(java.util.Collection<String> marketData) {
 		setParameter("marketData", marketData);
@@ -46,7 +44,6 @@ public class ZeroRatesRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setCcys(java.util.Collection<String> ccys) {
 		setParameter("ccys", ccys);
 	}
@@ -65,7 +62,6 @@ public class ZeroRatesRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setFilter(java.lang.String filter) {
 		setParameter("filter", filter);
 	}
@@ -75,7 +71,6 @@ public class ZeroRatesRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setLadder(java.lang.String ladder) {
 		setParameter("ladder", ladder);
 	}
@@ -84,7 +79,6 @@ public class ZeroRatesRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("ladder", ladder);
 		return this;
 	}
-
 
 	public void setTenors(java.util.Collection<String> tenors) {
 		setParameter("tenors", tenors);
@@ -104,7 +98,6 @@ public class ZeroRatesRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setNumYears(java.lang.Integer numYears) {
 		setParameter("numYears", numYears);
 	}
@@ -113,7 +106,6 @@ public class ZeroRatesRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("numYears", numYears);
 		return this;
 	}
-
 
 	public void setRow(java.lang.String row) {
 		setParameter("row", row);

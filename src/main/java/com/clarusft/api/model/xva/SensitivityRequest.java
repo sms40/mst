@@ -26,7 +26,6 @@ public class SensitivityRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setWhatif(java.util.Collection<String> whatif) {
 		setParameter("whatif", whatif);
 	}
@@ -45,7 +44,6 @@ public class SensitivityRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setValueDate(java.time.LocalDate valueDate) {
 		setParameter("valueDate", valueDate);
 	}
@@ -54,7 +52,6 @@ public class SensitivityRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("valueDate", valueDate);
 		return this;
 	}
-
 
 	public void setMarketData(java.util.Collection<String> marketData) {
 		setParameter("marketData", marketData);
@@ -74,7 +71,6 @@ public class SensitivityRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setModel(java.lang.String model) {
 		setParameter("model", model);
 	}
@@ -83,7 +79,6 @@ public class SensitivityRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("model", model);
 		return this;
 	}
-
 
 	public void setHouseClient(String houseClient) {
 		setParameter("houseClient", houseClient);
@@ -94,7 +89,6 @@ public class SensitivityRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setMultiplier(java.lang.Double multiplier) {
 		setParameter("multiplier", multiplier);
 	}
@@ -103,7 +97,6 @@ public class SensitivityRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("multiplier", multiplier);
 		return this;
 	}
-
 
 	public void setAddons(java.lang.Boolean addons) {
 		setParameter("addons", addons);
@@ -114,7 +107,6 @@ public class SensitivityRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setShiftFactor(java.lang.String shiftFactor) {
 		setParameter("shiftFactor", shiftFactor);
 	}
@@ -123,7 +115,6 @@ public class SensitivityRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("shiftFactor", shiftFactor);
 		return this;
 	}
-
 
 	public void setShift(java.lang.Integer shift) {
 		setParameter("shift", shift);
@@ -134,7 +125,6 @@ public class SensitivityRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setAgePortfolio(java.lang.Boolean agePortfolio) {
 		setParameter("agePortfolio", agePortfolio);
 	}
@@ -143,7 +133,6 @@ public class SensitivityRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("agePortfolio", agePortfolio);
 		return this;
 	}
-
 
 	public void setLadder(java.lang.String ladder) {
 		setParameter("ladder", ladder);
@@ -154,7 +143,6 @@ public class SensitivityRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setReportCcy(java.lang.String reportCcy) {
 		setParameter("reportCcy", reportCcy);
 	}
@@ -163,7 +151,6 @@ public class SensitivityRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("reportCcy", reportCcy);
 		return this;
 	}
-
 
 	public void setRow(java.lang.String row) {
 		setParameter("row", row);
@@ -174,7 +161,6 @@ public class SensitivityRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setTotalRow(java.lang.Boolean totalRow) {
 		setParameter("totalRow", totalRow);
 	}
@@ -184,7 +170,6 @@ public class SensitivityRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setFundingSpread(java.lang.Double fundingSpread) {
 		setParameter("fundingSpread", fundingSpread);
 	}
@@ -193,7 +178,6 @@ public class SensitivityRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("fundingSpread", fundingSpread);
 		return this;
 	}
-
 
 	public void setUnits(java.lang.String units) {
 		setParameter("units", units);

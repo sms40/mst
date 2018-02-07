@@ -17,7 +17,6 @@ public class ClearingMandatoryRequest extends com.clarusft.api.model.ApiRequest 
 		return this;
 	}
 
-
 	public void setCountry(String country) {
 		setParameter("country", country);
 	}

@@ -17,7 +17,6 @@ public class MarketRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setMarketData(java.util.Collection<String> marketData) {
 		setParameter("marketData", marketData);
 	}
@@ -35,7 +34,6 @@ public class MarketRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("marketData", java.util.Arrays.asList(marketData));
 		return this;
 	}
-
 
 	public void setMarket(java.lang.String market) {
 		setParameter("market", market);

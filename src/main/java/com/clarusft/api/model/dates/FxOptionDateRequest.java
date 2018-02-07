@@ -17,7 +17,6 @@ public class FxOptionDateRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setTradeDate(String tradeDate) {
 		setParameter("tradeDate", tradeDate);
 	}
@@ -27,7 +26,6 @@ public class FxOptionDateRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setMaturities(String maturities) {
 		setParameter("maturities", maturities);
 	}
@@ -36,7 +34,6 @@ public class FxOptionDateRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("maturities", maturities);
 		return this;
 	}
-
 
 	public void setSettlementType(String settlementType) {
 		setParameter("settlementType", settlementType);

@@ -17,7 +17,6 @@ public class ModellableRFRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setTicker(String ticker) {
 		setParameter("ticker", ticker);
 	}
@@ -26,7 +25,6 @@ public class ModellableRFRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("ticker", ticker);
 		return this;
 	}
-
 
 	public void setEndDate(java.time.LocalDate endDate) {
 		setParameter("endDate", endDate);
@@ -37,7 +35,6 @@ public class ModellableRFRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setCleared(String cleared) {
 		setParameter("cleared", cleared);
 	}
@@ -47,7 +44,6 @@ public class ModellableRFRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setSef(String sef) {
 		setParameter("sef", sef);
 	}
@@ -56,7 +52,6 @@ public class ModellableRFRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("sef", sef);
 		return this;
 	}
-
 
 	public void setSource(String source) {
 		setParameter("source", source);

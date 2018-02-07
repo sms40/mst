@@ -17,7 +17,6 @@ public class FXRatesRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setMarket(java.lang.String market) {
 		setParameter("market", market);
 	}

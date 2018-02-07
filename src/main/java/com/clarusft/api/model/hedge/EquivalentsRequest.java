@@ -26,7 +26,6 @@ public class EquivalentsRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setWhatif(java.util.Collection<String> whatif) {
 		setParameter("whatif", whatif);
 	}
@@ -45,7 +44,6 @@ public class EquivalentsRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setValueDate(java.time.LocalDate valueDate) {
 		setParameter("valueDate", valueDate);
 	}
@@ -55,7 +53,6 @@ public class EquivalentsRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setMarket(java.lang.String market) {
 		setParameter("market", market);
 	}
@@ -64,7 +61,6 @@ public class EquivalentsRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("market", market);
 		return this;
 	}
-
 
 	public void setMarketData(java.util.Collection<String> marketData) {
 		setParameter("marketData", marketData);
@@ -84,7 +80,6 @@ public class EquivalentsRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setLadder(java.lang.String ladder) {
 		setParameter("ladder", ladder);
 	}
@@ -93,7 +88,6 @@ public class EquivalentsRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("ladder", ladder);
 		return this;
 	}
-
 
 	public void setTenors(java.util.Collection<String> tenors) {
 		setParameter("tenors", tenors);
@@ -113,7 +107,6 @@ public class EquivalentsRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setBasis(java.lang.Boolean basis) {
 		setParameter("basis", basis);
 	}
@@ -122,7 +115,6 @@ public class EquivalentsRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("basis", basis);
 		return this;
 	}
-
 
 	public void setReportCcy(java.lang.String reportCcy) {
 		setParameter("reportCcy", reportCcy);
@@ -133,7 +125,6 @@ public class EquivalentsRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setRow(java.lang.String row) {
 		setParameter("row", row);
 	}
@@ -142,7 +133,6 @@ public class EquivalentsRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("row", row);
 		return this;
 	}
-
 
 	public void setCol(java.lang.String col) {
 		setParameter("col", col);
@@ -153,7 +143,6 @@ public class EquivalentsRequest extends com.clarusft.api.model.ApiRequest {
 		return this;
 	}
 
-
 	public void setTotalRow(java.lang.Boolean totalRow) {
 		setParameter("totalRow", totalRow);
 	}
@@ -162,7 +151,6 @@ public class EquivalentsRequest extends com.clarusft.api.model.ApiRequest {
 		setParameter("totalRow", totalRow);
 		return this;
 	}
-
 
 	public void setTotalCol(java.lang.Boolean totalCol) {
 		setParameter("totalCol", totalCol);
