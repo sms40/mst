@@ -87,39 +87,39 @@ public class ParSwapsIMRequest extends com.clarusft.api.model.ApiRequest {
 	}
 
 
-	public void setNotionalSizes(java.util.Collection<String> notionalSizes) {
+	public void setNotionalSizes(java.util.Collection<java.lang.Integer> notionalSizes) {
 		setParameter("notionalSizes", notionalSizes);
 	}
 
-	public ParSwapsIMRequest withNotionalSizes(java.util.Collection<String> notionalSizes) {
+	public ParSwapsIMRequest withNotionalSizes(java.util.Collection<java.lang.Integer> notionalSizes) {
 		setParameter("notionalSizes", notionalSizes);
 		return this;
 	}
 
-	public void setNotionalSizes(String... notionalSizes) {
+	public void setNotionalSizes(java.lang.Integer... notionalSizes) {
 		setParameter("notionalSizes", java.util.Arrays.asList(notionalSizes));
 	}
 
-	public ParSwapsIMRequest withNotionalSizes(String... notionalSizes) {
+	public ParSwapsIMRequest withNotionalSizes(java.lang.Integer... notionalSizes) {
 		setParameter("notionalSizes", java.util.Arrays.asList(notionalSizes));
 		return this;
 	}
 
 
-	public void setDv01Sizes(java.util.Collection<String> dv01Sizes) {
+	public void setDv01Sizes(java.util.Collection<java.lang.Integer> dv01Sizes) {
 		setParameter("dv01Sizes", dv01Sizes);
 	}
 
-	public ParSwapsIMRequest withDv01Sizes(java.util.Collection<String> dv01Sizes) {
+	public ParSwapsIMRequest withDv01Sizes(java.util.Collection<java.lang.Integer> dv01Sizes) {
 		setParameter("dv01Sizes", dv01Sizes);
 		return this;
 	}
 
-	public void setDv01Sizes(String... dv01Sizes) {
+	public void setDv01Sizes(java.lang.Integer... dv01Sizes) {
 		setParameter("dv01Sizes", java.util.Arrays.asList(dv01Sizes));
 	}
 
-	public ParSwapsIMRequest withDv01Sizes(String... dv01Sizes) {
+	public ParSwapsIMRequest withDv01Sizes(java.lang.Integer... dv01Sizes) {
 		setParameter("dv01Sizes", java.util.Arrays.asList(dv01Sizes));
 		return this;
 	}
@@ -184,13 +184,13 @@ public class ParSwapsIMRequest extends com.clarusft.api.model.ApiRequest {
 	}
 
 	@SuppressWarnings("unchecked")
-	public java.util.Collection<String> getNotionalSizes() {
-		return (java.util.Collection<String>)getParameter("notionalSizes");
+	public java.util.Collection<java.lang.Integer> getNotionalSizes() {
+		return (java.util.Collection<java.lang.Integer>)getParameter("notionalSizes");
 	}
 
 	@SuppressWarnings("unchecked")
-	public java.util.Collection<String> getDv01Sizes() {
-		return (java.util.Collection<String>)getParameter("dv01Sizes");
+	public java.util.Collection<java.lang.Integer> getDv01Sizes() {
+		return (java.util.Collection<java.lang.Integer>)getParameter("dv01Sizes");
 	}
 
 	public java.lang.String getReportCcy() {
