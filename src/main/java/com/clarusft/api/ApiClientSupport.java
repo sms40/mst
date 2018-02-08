@@ -104,6 +104,8 @@ public abstract class ApiClientSupport {
 	protected abstract void setTransposeProvider(SupportsTranspose response);
 
 	protected void readResponse(HttpURLConnection conn, HttpResp resp) throws IOException {
+		final long start = System.currentTimeMillis();
+		
 		resp.setResponseCode(conn.getResponseCode());
 		resp.setResponseHeaders(conn.getHeaderFields());
 		
@@ -120,6 +122,9 @@ public abstract class ApiClientSupport {
 
 			resp.setResponseBody(responseOut.toString("UTF-8"));
 		}
+		
+		resp.setElapsedTimeMs(System.currentTimeMillis()-start);
+		
     }
 	
 	private static void copy(InputStream in, OutputStream out)

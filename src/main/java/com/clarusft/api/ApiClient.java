@@ -8,6 +8,10 @@ import com.clarusft.api.exception.ApiException;
 @Generated("clarusft-ms-api-gen/com.clarusft.generator.Generator")
 public class ApiClient extends ApiClientSupport {
 
+	public static ApiClient getDefault() {
+		return new ApiClient(ApiClientBuilder.getDefault());
+	}
+
 	public ApiClient(ApiClientBuilder builder) {
 		super(builder);
 	}

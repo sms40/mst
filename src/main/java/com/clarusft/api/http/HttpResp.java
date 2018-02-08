@@ -8,6 +8,7 @@ public class HttpResp {
 	private int responseCode;
 	private String responseBody;
 	private final Map<String, List<String>> responseHeaders = new TreeMap<>(String.CASE_INSENSITIVE_ORDER);
+	private long elapsedTimeMs;
 	
 	public int getResponseCode() {
 		return responseCode;
@@ -23,6 +24,12 @@ public class HttpResp {
 	}
 	public Map<String, List<String>> getResponseHeaders() {
 		return responseHeaders;
+	}
+	public long getElapsedTimeMs() {
+		return elapsedTimeMs;
+	}
+	public void setElapsedTimeMs(long elapsedTimeMs) {
+		this.elapsedTimeMs = elapsedTimeMs;
 	}
 	public void setResponseHeaders(Map<String, List<String>> responseHeaders) {
 		this.responseHeaders.clear();

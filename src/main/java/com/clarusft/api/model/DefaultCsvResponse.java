@@ -30,4 +30,8 @@ public class DefaultCsvResponse extends ApiResponse {
 		this.grid = transposeResponse.getGrid();
 		getStats().putAll(transposeResponse.getStats());
 	}
+
+	public Double getTotal() {
+		return getStatDouble("GridTotal");
+	}
 }
