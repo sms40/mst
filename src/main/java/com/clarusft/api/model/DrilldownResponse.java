@@ -1,6 +1,7 @@
 package com.clarusft.api.model;
 
-public class DrilldownResponse extends DefaultCsvResponse implements SupportsDrilldown {
+public class DrilldownResponse extends DefaultCsvResponse 
+implements SupportsDrilldown, SupportsPivot, SupportsFilter, SupportsTranspose {
 	private DrilldownProvider drilldownProvider;
 	
 	@Override
