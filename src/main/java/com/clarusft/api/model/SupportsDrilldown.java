@@ -12,6 +12,14 @@ public interface SupportsDrilldown extends HasStats, HasAttributes {
 		return (DrilldownProvider) getAttribute(KEY);
 	}
 	
+	public default DrilldownResponse drilldown(int row, int col) {
+		return drilldown(String.valueOf(row), String.valueOf(col));
+	}
+	
+	public default DrilldownResponse drilldown(int row, int col, String view) {
+		return drilldown(String.valueOf(row), String.valueOf(col), view);
+	}
+	
 	public default DrilldownResponse drilldown(String row, String col) {
 		return drilldown(row, col, VIEW_DEFAULT);
 	}
