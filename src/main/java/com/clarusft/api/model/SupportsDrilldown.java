@@ -3,6 +3,7 @@ package com.clarusft.api.model;
 public interface SupportsDrilldown extends HasStats, HasAttributes {
 	static final String KEY = "com.clarusft.api.model.SupportsDrilldown.drilldownProvider";
 	static final String VIEW_DEFAULT = "Default";
+	static final String TOTAL = "Total";
 	
 	public default void setDrilldownProvider(DrilldownProvider drilldownProvider) {
 		setAttribute(KEY, drilldownProvider);
@@ -18,6 +19,10 @@ public interface SupportsDrilldown extends HasStats, HasAttributes {
 	
 	public default DrilldownResponse drilldown(int row, int col, String view) {
 		return drilldown(String.valueOf(row), String.valueOf(col), view);
+	}
+	
+	public default DrilldownResponse drilldown() {
+		return drilldown(TOTAL, TOTAL, VIEW_DEFAULT);
 	}
 	
 	public default DrilldownResponse drilldown(String row, String col) {
